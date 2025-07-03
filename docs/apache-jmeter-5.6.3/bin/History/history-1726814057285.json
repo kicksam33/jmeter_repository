@@ -1,0 +1,20 @@
+{
+  "steps" : [ {
+    "stepMessage" : "Original Recording",
+    "testPlanFilepath" : "D:\\apache-jmeter-5.6.3\\apache-jmeter-5.6.3\\bin\\Recording\\snapshot-1726814301906.jmx",
+    "recordingTraceFilepath" : "D:\\apache-jmeter-5.6.3\\apache-jmeter-5.6.3\\bin\\Recording\\recording-1726814301985.jtl",
+    "replayTraceFilepath" : null,
+    "timestamp" : "2024-09-20T06:38:22.002696800Z",
+    "fatherTimeStamp" : null,
+    "notes" : "Automatically generated iteration after recording"
+  }, {
+    "stepMessage" : "Replay with same failed requests as the original recording.",
+    "testPlanFilepath" : "D:\\apache-jmeter-5.6.3\\apache-jmeter-5.6.3\\bin\\Recording\\snapshot-1726814311453.jmx",
+    "recordingTraceFilepath" : null,
+    "replayTraceFilepath" : "D:\\apache-jmeter-5.6.3\\apache-jmeter-5.6.3\\bin\\Replay\\replay-1726814311772.jtl",
+    "timestamp" : "2024-09-20T06:38:34.320797Z",
+    "fatherTimeStamp" : null,
+    "notes" : "Automatically generated iteration after replay"
+  } ],
+  "historyId" : "1726814057285"
+}

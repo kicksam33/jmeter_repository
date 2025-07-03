@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">www.example.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="scheme" elementType="Argument">
+            <stringProp name="Argument.name">scheme</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <stringProp name="HTTPSampler.domain">www.example.com</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.implementation"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller"/>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T01_Launch">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="launch-65">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="launch-66">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogout.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=2811415804&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C6%7C_event_%7C1733811028040%7C_viewend_%7Cinp%7C0%7Csvn%7C%2FLoanIQ%2FLogout.jsp%7Csvt%7C1733809758849%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%2C1%7C7%7C_event_%7C1733811028040%7C_pageend_%7Cinp%7C0%7Curl%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogout.jsp$rId=RID_1021942582$rpId=-935395321$domR=1733809759035$tvn=%2FLoanIQ%2FLogout.jsp$tvt=1733809758849$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogout.jsp$title=LoanIQ%20%3A%20Logout$isUnload=1$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=409758975_765$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811028045</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/Logout.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="launch-67">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=2282881293&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C1%7C_load_%7C_load_%7C-%7C1733811027901%7C1733811028396%7Cdn%7C68%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C3%7C_event_%7C1733811027901%7C_vc_%7CV%7C362%5Epc%7CVCD%7C1062%7CVCDS%7C2%7CVCS%7C574%7CVCO%7C1578%7CVCI%7C0%7CTS%7C1%7CVE%7C448%5Ep482%5Ep6545%5Eps%5Estd%3Anth-of-type%281%29%3Ediv%3Afirst-child%3Efont%3Afirst-child%7CS%7C356%2C2%7C4%7C_event_%7C1733811027901%7C_wv_%7ClcpE%7CDIV%7ClcpSel%7Ctd%3Anth-of-type%281%29%3Ediv%3Afirst-child%7ClcpS%7C6702%7ClcpT%7C425%7ClcpU%7C-%7ClcpLT%7C0%7Cfcp%7C425%7Cfp%7C425%7Ccls%7C0%7Clt%7C282%2C2%7C2%7C_onload_%7C_load_%7C-%7C1733811028395%7C1733811028396%7Cdn%7C68%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C1%7C5%7C_event_%7C1733811027901%7C_view_%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$dO=192.168.0.133,$rId=RID_1895941921$rpId=-1605714463$domR=1733811028388$tvn=%2FLoanIQ%2F$tvt=1733811027901$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$nt=a0b1733811027901e97f97g97h102i105k106l135m139o361p362q367r488s494t495u3183v2883w2883X200M-1605714463V0$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411028197_463$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811029552</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="launch-68">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=2691107805&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$tvn=%2FLoanIQ%2F$tvt=1733811027901$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$rt=1-1733811027901%3Bhttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fpersonal.JPG%7Cb164e0f0g0h0i0k51l52m54v19487w19487X200E1F5890O155P38Q877R127I7M1388194655V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fcorporative.JPG%7Cb165e0f0g0h0i0k71l72m73v64274w64274X200E1F6460O170P38Q980R130I7M-377800279V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fbusiness.JPG%7Cb165e0f0g0h0i0k188l190m191v20792w20792X200E1F6080O160P38Q877R127I7M-2034598410V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fnri.JPG%7Cb166e0f0g0h0i0k189l191m192v15584w15584X200E1F5700O150P38Q777R127I7M-702657831V0$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411028197_463$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811031613</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T02_Click_Personal Banking">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="personal banking-69">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/login.jsp</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="personal banking-70">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3785422265&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C6%7C_event_%7C1733811042927%7C_wv_%7CAAI%7C1%7CfIS%7C14835%7CfID%7C5%2C1%7C7%7C_event_%7C1733811042929%7C_viewend_%7Cinp%7C56%7Csvn%7C%2FLoanIQ%2F%7Csvt%7C1733811027901%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%2C1%7C8%7C_event_%7C1733811042929%7C_pageend_%7Cinp%7C56%7Curl%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F$rId=RID_1895941921$rpId=-1605714463$domR=1733811028388$tvn=%2FLoanIQ%2F$tvt=1733811027901$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F$title=Welcome%20To%20LoanIQ$isUnload=1$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411028197_463$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811042933</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="personal banking-71">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=1960751083&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=d%7C-1%7Cimage1%7CC%7C-%7C411028197_463%7C1733811042868%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F%7C%7C%7C%2FLoanIQ%2F%7C1733811027901%2C1%7C1%7C_load_%7C_load_%7C-%7C1733811042870%7C1733811043107%7Cdn%7C54%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%7Clr%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2F%2C2%7C3%7C_event_%7C1733811042870%7C_vc_%7CV%7C166%5Epc%7CVCD%7C1071%7CVCDS%7C2%7CVCS%7C304%7CVCO%7C1307%7CVCI%7C0%7CTS%7C1%7CVE%7C468%5Ep258%5Ep1955%5Eps%5Esa%3Afirst-child%7CS%7C163%2C2%7C4%7C_event_%7C1733811042870%7C_wv_%7ClcpT%7C-5%7Cfcp%7C-6%7Cfp%7C-6%7Ccls%7C0%7Clt%7C78%2C2%7C2%7C_onload_%7C_load_%7C-%7C1733811043106%7C1733811043107%7Cdn%7C54%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C1%7C5%7C_event_%7C1733811042870%7C_view_%7Csvn%7C%2FLoanIQ%2F%7Csvt%7C1733811027901%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$dO=192.168.0.133,$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$nt=a0b1733811042870e13f13g13h13i13k18l53m54o166p166q169r233s236t237u3200v2900w2900X200M-654540329V0$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811044257</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-72">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=974784307&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$rt=1-1733811042870%3Bhttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Flogin.JPG%7Cb71e0f0g0h0i0k41l48m49v5123w5123X200I13M-482053993V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fsignup.JPG%7Cb71e0f0g0h0i0k45l48m50v6019w6019X200E1F1625O65P25Q302R127I7M1961251386V0$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811046301</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T03_Login">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-73">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=1078284522&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C6%7C_event_%7C1733811052010%7C_wv_%7CAAI%7C1%7CfIS%7C8971%7CfID%7C5$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811054019</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-74">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=687408611&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C7%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811056004%7C1733811056004%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C8%7CReferenceError%7C_type_%7C-%7C1733811056010%7C1733811056010%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C9%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811056016%7C1733811056016%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C10%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811056022%7C1733811056022%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C11%7C13016%7C_ts_%7C-%7C1733811056027%7C1733811056027%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C12%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811056032%7C1733811056032%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C13%7C1%7C_source_%7C-%7C1733811056037%7C1733811056037%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811056050</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-75">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=128226110&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C14%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811056246%7C1733811056246%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C15%7CReferenceError%7C_type_%7C-%7C1733811056252%7C1733811056252%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C16%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811056257%7C1733811056257%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C17%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811056263%7C1733811056263%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C18%7C13258%7C_ts_%7C-%7C1733811056268%7C1733811056268%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C19%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811056273%7C1733811056273%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C20%7C1%7C_source_%7C-%7C1733811056279%7C1733811056279%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811056291</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-76">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3869243893&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C21%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811056572%7C1733811056572%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C22%7CReferenceError%7C_type_%7C-%7C1733811056579%7C1733811056579%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C23%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811056584%7C1733811056584%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C24%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811056589%7C1733811056589%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C25%7C13584%7C_ts_%7C-%7C1733811056595%7C1733811056595%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C26%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811056600%7C1733811056600%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C27%7C1%7C_source_%7C-%7C1733811056605%7C1733811056605%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811056617</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-77">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3070247968&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C28%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811056845%7C1733811056845%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C29%7CReferenceError%7C_type_%7C-%7C1733811056850%7C1733811056850%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C30%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811056856%7C1733811056856%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C31%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811056861%7C1733811056861%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C32%7C13857%7C_ts_%7C-%7C1733811056866%7C1733811056866%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C33%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811056872%7C1733811056872%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C34%7C1%7C_source_%7C-%7C1733811056877%7C1733811056877%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811056889</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-78">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=1589450597&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C35%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811057056%7C1733811057056%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C36%7CReferenceError%7C_type_%7C-%7C1733811057062%7C1733811057062%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C37%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811057067%7C1733811057067%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C38%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811057072%7C1733811057072%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C39%7C14068%7C_ts_%7C-%7C1733811057078%7C1733811057078%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C40%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811057083%7C1733811057083%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C41%7C1%7C_source_%7C-%7C1733811057088%7C1733811057088%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811057100</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-79">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=2733820356&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C42%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811057328%7C1733811057328%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C43%7CReferenceError%7C_type_%7C-%7C1733811057333%7C1733811057333%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C44%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811057338%7C1733811057338%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C45%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811057343%7C1733811057343%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C46%7C14340%7C_ts_%7C-%7C1733811057348%7C1733811057348%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C47%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811057354%7C1733811057354%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C48%7C1%7C_source_%7C-%7C1733811057359%7C1733811057359%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811057371</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-80">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=588189647&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C49%7Cvalid%20is%20not%20defined%7C_error_%7C-%7C1733811057515%7C1733811057515%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C50%7CReferenceError%7C_type_%7C-%7C1733811057520%7C1733811057520%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C51%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%5Ep67%5Ep108%7C_location_%7C-%7C1733811057526%7C1733811057526%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C52%7CReferenceError%3A%20valid%20is%20not%20defined%5Ep%20%20%20%20at%20HTMLInputElement.onkeypress%20%28http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%3A67%3A108%29%7C_stack_%7C-%7C1733811057531%7C1733811057531%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C53%7C14527%7C_ts_%7C-%7C1733811057536%7C1733811057536%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C54%7CKD%5Eppassword%7C_useraction_%7C-%7C1733811057541%7C1733811057541%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C2%7C55%7C1%7C_source_%7C-%7C1733811057547%7C1733811057547%7Cdn%7C-1%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811057558</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-81">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/Login?JSESSIONID=DKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="accno" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">accno</stringProp>
+                    <stringProp name="Argument.value">IQ10115</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="password" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">password</stringProp>
+                    <stringProp name="Argument.value">welcome</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="x" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">x</stringProp>
+                    <stringProp name="Argument.value">33</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="y" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">y</stringProp>
+                    <stringProp name="Argument.value">8</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                  </elementProp>
+                  <elementProp name="Cache-Control" elementType="Header">
+                    <stringProp name="Header.name">Cache-Control</stringProp>
+                    <stringProp name="Header.value">max-age=0</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-82">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=1076655649&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C56%7C_event_%7C1733811059379%7C_viewend_%7Cinp%7C88%7Csvn%7C%2FLoanIQ%2Flogin.jsp%7Csvt%7C1733811042870%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%2C1%7C57%7C_event_%7C1733811059379%7C_pageend_%7Cinp%7C88%7Curl%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$rId=RID_1318254503$rpId=-654540329$domR=1733811043103$tvn=%2FLoanIQ%2Flogin.jsp$tvt=1733811042870$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp$title=Welcome%20To%20LoanIQ$isUnload=1$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411042988_99$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811059386</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/login.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-83">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=1131728989&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=d%7C-1%7Clogin%7CC%7C-%7C411042988_99%7C1733811059254%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%7C%7C%7C%2FLoanIQ%2Flogin.jsp%7C1733811042870%2C1%7C1%7C_load_%7C_load_%7C-%7C1733811059255%7C1733811059584%7Cdn%7C71%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%7Clr%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Flogin.jsp%2C2%7C3%7C_event_%7C1733811059255%7C_vc_%7CV%7C251%5Epc%7CVCD%7C1063%7CVCDS%7C5%7CVCS%7C407%7CVCO%7C1420%7CVCI%7C0%7CTS%7C1%7CVE%7C448%5Ep438%5Ep6545%5Eps%5Estd%3Anth-of-type%281%29%3Efont%3Afirst-child%7CS%7C249%2C2%7C4%7C_event_%7C1733811059255%7C_wv_%7ClcpT%7C-5%7Cfcp%7C-6%7Cfp%7C-6%7Ccls%7C0%7Clt%7C147%2C2%7C2%7C_onload_%7C_load_%7C-%7C1733811059584%7C1733811059584%7Cdn%7C71%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C1%7C5%7C_event_%7C1733811059255%7C_view_%7Csvn%7C%2FLoanIQ%2Flogin.jsp%7Csvt%7C1733811042870%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$dO=192.168.0.133,$rId=RID_1577566103$rpId=869016301$domR=1733811059576$tvn=%2FLoanIQ%2FLogin$tvt=1733811059255$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$nt=a0b1733811059255e29f29g29h35i38k39l102m106o251p252q257r321s329t329u3561v3261w3261X200M869016301V0W1$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171$title=LoanIQ%3A%20Customerhome$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411059461_242$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811060745</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/Login?JSESSIONID=DKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-84">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=2514828352&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$tvn=%2FLoanIQ%2FLogin$tvt=1733811059255$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$rt=1-1733811059255%3Bhttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FAccounts.JPG%7Cb141e0f0g0h0i0k0l0m0v13310w13310X200E1F2700O90P30Q652R127I7M-1434136638V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FLoans.JPG%7Cb141e0f0g0h0i0k0l0m0v10330w10330X200E1F2100O70P30Q652R127I7M-1945042959V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FBillpay.JPG%7Cb141e0f0g0h0i0k0l0m0v10448w10448X200E1F2250O75P30Q652R127I7M609783275V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fcards.JPG%7Cb142e0f0g0h0i0k0l0m0v14303w14303X200E1F3000O100P30Q652R127I7M1703651991V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FDemat.JPG%7Cb142e0f0g0h0i0k0l0m0v9879w9879X200E1F2100O70P30Q652R127I7M1518407262V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Flogout.JPG%7Cb142e0f0g0h0i0k0l0m0v10813w10813X200E1F2100O70P30Q652R127I7M-56665546V0$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171$title=LoanIQ%3A%20Customerhome$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411059461_242$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811062784</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/Login?JSESSIONID=DKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T04_Click_Accounts">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="accounts-85">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/accounts.jsp</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/Login?JSESSIONID=DKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="accounts-86">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3108097434&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C6%7C_event_%7C1733811067388%7C_wv_%7CAAI%7C1%7CfIS%7C7975%7CfID%7C3%2C1%7C7%7C_event_%7C1733811067453%7C_viewend_%7Cinp%7C0%7Csvn%7C%2FLoanIQ%2FLogin%7Csvt%7C1733811059255%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%2C1%7C8%7C_event_%7C1733811067454%7C_pageend_%7Cinp%7C0%7Curl%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9t...$rId=RID_1577566103$rpId=869016301$domR=1733811059576$tvn=%2FLoanIQ%2FLogin$tvt=1733811059255$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171$title=LoanIQ%3A%20Customerhome$isUnload=1$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411059461_242$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811067460</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/Login?JSESSIONID=DKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4!-1694270801!1733811027171</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="accounts-87">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=1257396285&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=d%7C-1%7Cimage1%7CC%7C-%7C411059461_242%7C1733811067352%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4%21-1694270801%211733811027171%7C%7C%7C%2FLoanIQ%2FLogin%7C1733811059255%2C1%7C1%7C_load_%7C_load_%7C-%7C1733811067358%7C1733811067608%7Cdn%7C80%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%7Clr%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogin%3FJSESSIONID%3DDKavMLzjdlnl2Iw6XYLv_SS_bKWW8XilStQhJIjfPbB5s9to9wI4%21-1694270801%211733811027171%2C2%7C3%7C_event_%7C1733811067358%7C_vc_%7CV%7C214%5Epc%7CVCD%7C1072%7CVCDS%7C3%7CVCS%7C312%7CVCO%7C1321%7CVCI%7C0%7CTS%7C1%7CVE%7C322%5Ep421%5Ep6545%5Eps%5Esdiv.conditions%3Efont%3Afirst-child%7CS%7C213%2C2%7C4%7C_event_%7C1733811067358%7C_wv_%7ClcpT%7C-5%7Cfcp%7C-6%7Cfp%7C-6%7Ccls%7C0%7Clt%7C77%2C2%7C2%7C_onload_%7C_load_%7C-%7C1733811067608%7C1733811067608%7Cdn%7C80%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C1%7C5%7C_event_%7C1733811067358%7C_view_%7Csvn%7C%2FLoanIQ%2FLogin%7Csvt%7C1733811059255%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$dO=192.168.0.133,$rId=RID_-1661599622$rpId=2130175438$domR=1733811067604$tvn=%2FLoanIQ%2Faccounts.jsp$tvt=1733811067358$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$nt=a0b1733811067358e28f28g28h28i28k41l81m85o214p214q216r247s250t250u4276v3976w3976X200M2130175438V0$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp$title=LoanIQ%3A%20Accounts$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411067545_509$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811068756</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/accounts.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-88">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=751609120&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$tvn=%2FLoanIQ%2Faccounts.jsp$tvt=1733811067358$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$rt=1-1733811067358%3Bhttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FAccounts.JPG%7Cb120e0f0g0h0i0k0l0m0v13310w13310X200E1F2700O90P30Q652R127I7M-1434136638V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FLoans.JPG%7Cb120e0f0g0h0i0k0l0m0v10330w10330X200E1F2100O70P30Q652R127I7M-1945042959V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FBillpay.JPG%7Cb120e0f0g0h0i0k0l0m0v10448w10448X200E1F2250O75P30Q652R127I7M609783275V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fcards.JPG%7Cb120e0f0g0h0i0k0l0m0v14303w14303X200E1F3000O100P30Q652R127I7M1703651991V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FDemat.JPG%7Cb121e0f0g0h0i0k0l0m0v9879w9879X200E1F2100O70P30Q652R127I7M1518407262V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Flogout.JPG%7Cb121e0f0g0h0i0k0l0m0v10813w10813X200E1F2100O70P30Q652R127I7M-56665546V0$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp$title=LoanIQ%3A%20Accounts$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411067545_509$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811070802</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/accounts.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T05_Click_Account summary">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="account summary-89">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/AccountSummary.jsp</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/accounts.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="account summary-90">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3066379071&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C6%7C_event_%7C1733811076204%7C_wv_%7CAAI%7C1%7CfIS%7C8677%7CfID%7C8%2C1%7C7%7C_event_%7C1733811076303%7C_viewend_%7Cinp%7C48%7Csvn%7C%2FLoanIQ%2Faccounts.jsp%7Csvt%7C1733811067358%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%2C1%7C8%7C_event_%7C1733811076303%7C_pageend_%7Cinp%7C48%7Curl%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp$rId=RID_-1661599622$rpId=2130175438$domR=1733811067604$tvn=%2FLoanIQ%2Faccounts.jsp$tvt=1733811067358$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp$title=LoanIQ%3A%20Accounts$isUnload=1$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411067545_509$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811076310</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/accounts.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="account summary-91">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=2184030776&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=d%7C-1%7CAccount%C2%A0Summary%7CC%7C-%7C411067545_509%7C1733811076168%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp%7C%7C%7C%2FLoanIQ%2Faccounts.jsp%7C1733811067358%2C1%7C1%7C_load_%7C_load_%7C-%7C1733811076174%7C1733811076533%7Cdn%7C130%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%7Clr%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Faccounts.jsp%2C2%7C3%7C_event_%7C1733811076174%7C_vc_%7CV%7C262%5Epc%7CVCD%7C1062%7CVCDS%7C4%7CVCS%7C447%7CVCO%7C1452%7CVCI%7C0%7CTS%7C1%7CVE%7C448%5Ep517%5Ep6545%5Eps%5Estr%3Anth-of-type%286%29%3Etd%3Afirst-child%3Ediv%3Afirst-child%3Efont%3Afirst-child%7CS%7C260%2C2%7C4%7C_event_%7C1733811076174%7C_wv_%7ClcpT%7C-5%7Cfcp%7C-6%7Cfp%7C-6%7Ccls%7C0%7Clt%7C155%2C2%7C2%7C_onload_%7C_load_%7C-%7C1733811076533%7C1733811076533%7Cdn%7C130%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C1%7C5%7C_event_%7C1733811076174%7C_view_%7Csvn%7C%2FLoanIQ%2Faccounts.jsp%7Csvt%7C1733811067358%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$dO=192.168.0.133,$rId=RID_2057405799$rpId=-1172380896$domR=1733811076524$tvn=%2FLoanIQ%2FAccountSummary.jsp$tvt=1733811076174$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$nt=a0b1733811076174e49f49g49h61i63k63l117m121o262p263q272r351s359t359u6880v6580w6580X200M-1172380896V0$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp$title=LoanIQ%3A%20Account%20Summary$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411076383_767$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811077693</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/AccountSummary.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-92">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3634560579&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$tvn=%2FLoanIQ%2FAccountSummary.jsp$tvt=1733811076174$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$rt=1-1733811076174%3Bhttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FAccounts.JPG%7Cb149e0f0g0h0i0k0l0m0v13310w13310X200E1F2700O90P30Q652R127I7M-1434136638V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FLoans.JPG%7Cb149e0f0g0h0i0k0l0m0v10330w10330X200E1F2100O70P30Q652R127I7M-1945042959V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FBillpay.JPG%7Cb149e0f0g0h0i0k0l0m0v10448w10448X200E1F2250O75P30Q652R127I7M609783275V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Fcards.JPG%7Cb150e0f0g0h0i0k0l0m0v14303w14303X200E1F3000O100P30Q652R127I7M1703651991V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2FDemat.JPG%7Cb150e0f0g0h0i0k0l0m0v9879w9879X200E1F2100O70P30Q652R127I7M1518407262V0%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2Fimages%2Flogout.JPG%7Cb150e0f0g0h0i0k0l0m0v10813w10813X200E1F2100O70P30Q652R127I7M-56665546V0$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp$title=LoanIQ%3A%20Account%20Summary$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411076383_767$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811079743</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/AccountSummary.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T06_Click_Logout">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="logout-93">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/Logout.jsp</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/AccountSummary.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="logout-94">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=3021094405&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=1%7C6%7C_event_%7C1733811084105%7C_wv_%7CAAI%7C1%7CfIS%7C7774%7CfID%7C3%2C1%7C7%7C_event_%7C1733811084189%7C_viewend_%7Cinp%7C40%7Csvn%7C%2FLoanIQ%2FAccountSummary.jsp%7Csvt%7C1733811076174%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%2C1%7C8%7C_event_%7C1733811084189%7C_pageend_%7Cinp%7C40%7Curl%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp$rId=RID_2057405799$rpId=-1172380896$domR=1733811076524$tvn=%2FLoanIQ%2FAccountSummary.jsp$tvt=1733811076174$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp$title=LoanIQ%3A%20Account%20Summary$isUnload=1$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411076383_767$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811084195</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/AccountSummary.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="logout-95">
+              <stringProp name="HTTPSampler.domain">192.168.0.133</stringProp>
+              <stringProp name="HTTPSampler.port">7001</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/LoanIQ/rb_bf19108jdb?type=js3&amp;sn=v_4_srv_-2D7_sn_GGEVPLEJCKNQPT4VLCHJ80H4A7MLLVJ8&amp;svrid=-7&amp;flavor=post&amp;vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0&amp;modifiedSince=1733385655237&amp;rf=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogout.jsp&amp;bp=3&amp;app=ea7c4b59f27d43eb&amp;crc=340418558&amp;en=zykpnx0n&amp;end=1</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">$a=d%7C-1%7Clogout%7CC%7C-%7C411076383_767%7C1733811084078%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp%7C%7C%7C%2FLoanIQ%2FAccountSummary.jsp%7C1733811076174%2C1%7C1%7C_load_%7C_load_%7C-%7C1733811084082%7C1733811084409%7Cdn%7C60%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%7Clr%7Chttp%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FAccountSummary.jsp%2C2%7C3%7C_event_%7C1733811084082%7C_vc_%7CV%7C240%5Epc%7CVCD%7C1060%7CVCDS%7C1%7CVCS%7C397%7CVCO%7C1404%7CVCI%7C0%7CTS%7C1%7CVE%7C466%5Ep501%5Ep5376%5Eps%5Esdiv%3Anth-of-type%282%29%3Efont%3Afirst-child%7CS%7C238%2C2%7C4%7C_event_%7C1733811084082%7C_wv_%7ClcpT%7C-5%7Cfcp%7C-6%7Cfp%7C-6%7Ccls%7C0%7Clt%7C153%2C2%7C2%7C_onload_%7C_load_%7C-%7C1733811084409%7C1733811084409%7Cdn%7C60%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0%2C1%7C5%7C_event_%7C1733811084082%7C_view_%7Csvn%7C%2FLoanIQ%2FAccountSummary.jsp%7Csvt%7C1733811076174%7Csvtrg%7C1%7Csvm%7Ci1%5Esk0%5Esh0%7Ctvtrg%7C1%7Ctvm%7Ci1%5Esk0%5Esh0$dO=192.168.0.133,$rId=RID_1021942582$rpId=880902052$domR=1733811084399$tvn=%2FLoanIQ%2FLogout.jsp$tvt=1733811084082$tvm=i1%3Bk0%3Bh0$tvtrg=1$w=1280$h=632$sw=1280$sh=720$nt=a0b1733811084082e41f41g41h41i41k49l77m80o240p241q246r317s327t327u2731v2431w2431X200M880902052V0$ni=4g|1.6$url=http%3A%2F%2F192.168.0.133%3A7001%2FLoanIQ%2FLogout.jsp$title=LoanIQ%20%3A%20Logout$latC=0$app=ea7c4b59f27d43eb$vi=ANRPHBDVRWMCRBACKUUQFOMHOKMRQEFS-0$fId=411084269_469$v=10303241106123517$vID=1733809728645C9K3JOARBM4SMU7JDMPSFFVBROHO4V27$time=1733811085550</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001/LoanIQ/Logout.jsp</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+                  </elementProp>
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">http://192.168.0.133:7001</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>true</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
+        <stringProp name="ProxyControlGui.port">8080</stringProp>
+        <collectionProp name="ProxyControlGui.exclude_list">
+          <stringProp name="1179605444">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|eot|otf|ttf|mp4|woff|woff2)</stringProp>
+          <stringProp name="-88591710">www\.download\.windowsupdate\.com.*</stringProp>
+          <stringProp name="1323576868">toolbarqueries\.google\..*</stringProp>
+          <stringProp name="1629558731">clients.*\.google.*</stringProp>
+          <stringProp name="-1899150273">api\.bing\.com.*</stringProp>
+          <stringProp name="305776760">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|eot|otf|ttf|mp4|woff|woff2)[\?;].*</stringProp>
+          <stringProp name="1779943373">us\.update\.toolbar\.yahoo\.com.*</stringProp>
+          <stringProp name="1815174768">safebrowsing.*\.google\.com.*</stringProp>
+          <stringProp name="587935979">g\.msn.*</stringProp>
+          <stringProp name="110431874">.*msg\.yahoo\.com.*</stringProp>
+          <stringProp name="1206954446">tiles.*\.mozilla\.com.*</stringProp>
+          <stringProp name="-1314416226">sqm\.microsoft\.com.*</stringProp>
+          <stringProp name="1726898318">geo\.yahoo\.com.*</stringProp>
+          <stringProp name="-192420923">.*yimg\.com.*</stringProp>
+          <stringProp name="2118375536">www\.google-analytics\.com.*</stringProp>
+          <stringProp name="1739087931">http?://self-repair\.mozilla\.org.*</stringProp>
+          <stringProp name="805311387">windowsupdate\.microsoft\.com.*</stringProp>
+          <stringProp name="-1424663473">.*detectportal\.firefox\.com.*</stringProp>
+          <stringProp name="11072252">.*toolbar\.yahoo\.com.*</stringProp>
+          <stringProp name="-190610036">.*\.google\.com.*/safebrowsing/.*</stringProp>
+          <stringProp name="-958112859">toolbar\.google\.com.*</stringProp>
+          <stringProp name="-1279148329">pgq\.yahoo\.com.*</stringProp>
+          <stringProp name="-1435252351">toolbar\.avg\.com/.*</stringProp>
+          <stringProp name="-576820688">toolbar\.msn\.com.*</stringProp>
+        </collectionProp>
+        <collectionProp name="ProxyControlGui.include_list"/>
+        <boolProp name="ProxyControlGui.capture_http_headers">true</boolProp>
+        <intProp name="ProxyControlGui.grouping_mode">4</intProp>
+        <boolProp name="ProxyControlGui.add_assertion">false</boolProp>
+        <stringProp name="ProxyControlGui.sampler_type_name"></stringProp>
+        <boolProp name="ProxyControlGui.sampler_redirect_automatically">false</boolProp>
+        <boolProp name="ProxyControlGui.sampler_follow_redirects">true</boolProp>
+        <boolProp name="ProxyControlGui.use_keepalive">true</boolProp>
+        <boolProp name="ProxyControlGui.sampler_download_images">false</boolProp>
+        <boolProp name="ProxyControlGui.regex_match">true</boolProp>
+        <stringProp name="ProxyControlGui.content_type_include"></stringProp>
+        <stringProp name="ProxyControlGui.content_type_exclude"></stringProp>
+        <boolProp name="ProxyControlGui.notify_child_sl_filtered">false</boolProp>
+        <stringProp name="ProxyControlGui.proxy_prefix_http_sampler_name">logout</stringProp>
+        <intProp name="ProxyControlGui.proxy_http_sampler_naming_mode">1</intProp>
+        <stringProp name="ProxyControlGui.proxy_pause_http_sampler"></stringProp>
+        <boolProp name="ProxyControlGui.detect_graphql_request">true</boolProp>
+        <stringProp name="ProxyControlGui.default_encoding">UTF-8</stringProp>
+      </ProxyControl>
+      <hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>true</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>true</responseHeaders>
+              <requestHeaders>true</requestHeaders>
+              <responseDataOnError>true</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <url>true</url>
+              <fileName>true</fileName>
+              <hostname>true</hostname>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">recording.xml</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

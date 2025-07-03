@@ -1,0 +1,673 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1744955667498,102,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6574,1179,1,1,null,0,140,57
+1744955667616,93,launch-1,200,OK,Thread Group 1-1,text,true,,3397,478,1,1,http://192.168.0.151:7001/LoanIQ/,93,0,57
+1744955667723,9,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,1,1,http://192.168.0.151:7001/LoanIQ/login.jsp,9,0,0
+1744955668472,26,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6574,1179,2,2,null,0,10,8
+1744955668475,17,launch-1,200,OK,Thread Group 1-2,text,true,,3398,478,2,2,http://192.168.0.151:7001/LoanIQ/,17,0,8
+1744955668497,9,launch-2,200,OK,Thread Group 1-2,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,8,0,0
+1744955667742,98,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3600,966,2,2,null,0,3018,0
+1744955670757,98,launch-3,200,OK,Thread Group 1-1,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=lTPvxTt-VSZDYY1Sjejhru-YbM0pcXXm9NSqOzva1tuJrnYBNJ96!-152464794!1713419664254,95,0,0
+1744955670860,11,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,799,2,2,null,0,6,0
+1744955670863,11,login-4,200,OK,Thread Group 1-1,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,11,0,0
+1744955670879,23,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6736,722,2,2,null,0,7,0
+1744955670881,23,accts-5,200,OK,Thread Group 1-1,text,true,,6736,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,23,0,0
+1744955670911,9,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,722,2,2,null,0,5,0
+1744955670914,9,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,8,0,0
+1744955668509,42,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3599,966,2,2,null,0,3005,0
+1744955671513,42,launch-3,200,OK,Thread Group 1-2,text,true,,3599,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=J3bvxT6fyqfprvtYTTh2IINdg9YPptNhwRSwZSivmO830Wqo41-r!-152464794!1713419665055,41,0,0
+1744955671558,6,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,799,2,2,null,0,4,0
+1744955671560,6,login-4,200,OK,Thread Group 1-2,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955671570,24,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6744,722,2,2,null,0,6,0
+1744955671572,24,accts-5,200,OK,Thread Group 1-2,text,true,,6744,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,23,0,0
+1744955671601,6,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,4,0
+1744955671603,6,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955670926,10,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3779,720,2,2,null,0,3016,0
+1744955673941,10,accounts-7,200,OK,Thread Group 1-1,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,9,0,0
+1744955673953,12,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,3,0
+1744955673955,12,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,11,0,0
+1744955673969,20,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,5,0
+1744955673972,20,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,20,0,0
+1744955673995,8,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5512,864,2,2,null,0,3,0
+1744955673996,8,ac_review-12,200,OK,Thread Group 1-1,text,true,,5512,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,8,0,0
+1744955671612,11,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3780,720,2,2,null,0,3014,0
+1744955674625,11,accounts-7,200,OK,Thread Group 1-2,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,11,0,0
+1744955674638,22,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5349,716,2,2,null,0,4,0
+1744955674641,22,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5349,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,22,0,0
+1744955674665,24,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1191,726,2,2,null,0,4,0
+1744955674668,24,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,24,0,0
+1744955674693,19,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5512,864,2,2,null,0,3,0
+1744955674695,19,ac_review-12,200,OK,Thread Group 1-2,text,true,,5512,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,18,0,0
+1744955674007,56,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3563,981,2,2,null,0,3022,0
+1744955677024,56,ac_review-13,200,OK,Thread Group 1-1,text,true,,3563,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,56,0,0
+1744955677086,10,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3861,874,2,2,null,0,4,0
+1744955677089,10,pay-14,200,OK,Thread Group 1-1,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,10,0,0
+1744955677101,303,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3491,1379,2,2,null,0,9,31
+1744955677103,9,pay-15,200,OK,Thread Group 1-1,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,9,0,0
+1744955677118,294,logout-16,200,OK,Thread Group 1-1,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,293,0,31
+1744955677439,18,Debug Sampler,200,OK,Thread Group 1-1,text,true,,882,0,2,2,null,0,0,0
+1744955677459,24,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6442,1375,2,2,null,0,6,0
+1744955677460,10,launch-1,200,OK,Thread Group 1-1,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,10,0,0
+1744955677473,14,launch-2,200,OK,Thread Group 1-1,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,13,0,0
+1744955674717,79,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3561,981,2,2,null,0,3011,0
+1744955677726,79,ac_review-13,200,OK,Thread Group 1-2,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,79,0,0
+1744955677808,29,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3860,874,2,2,null,0,2,0
+1744955677809,29,pay-14,200,OK,Thread Group 1-2,text,true,,3860,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,28,0,0
+1744955677840,133,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3486,1379,2,2,null,0,7,14
+1744955677841,11,pay-15,200,OK,Thread Group 1-2,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,10,0,0
+1744955677857,122,logout-16,200,OK,Thread Group 1-2,text,true,,858,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,121,0,14
+1744955677983,4,Debug Sampler,200,OK,Thread Group 1-2,text,true,,885,0,2,2,null,0,0,0
+1744955677989,14,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6443,1375,2,2,null,0,7,0
+1744955677991,7,launch-1,200,OK,Thread Group 1-2,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,7,0,0
+1744955678001,7,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,7,0,0
+1744955677490,36,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3600,966,2,2,null,0,3004,0
+1744955680493,36,launch-3,200,OK,Thread Group 1-1,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=w-rvxWGyvl9jvBTa60s9F6bsxozIs14p30onvoUIehPzn2-6dWN-!-152464794!1713419674034,35,0,0
+1744955680531,6,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,799,2,2,null,0,3,0
+1744955680533,6,login-4,200,OK,Thread Group 1-1,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955680541,21,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6746,722,2,2,null,0,5,0
+1744955680543,21,accts-5,200,OK,Thread Group 1-1,text,true,,6746,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,21,0,0
+1744955680568,7,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,722,2,2,null,0,2,0
+1744955680569,7,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955678011,56,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3601,966,2,2,null,0,3012,0
+1744955681022,56,launch-3,200,OK,Thread Group 1-2,text,true,,3601,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=cTXvxWPErVKSov2UHl73895oReV7kNK4nJMMeX5l11D3SPVRqbwq!-152464794!1713419674564,56,0,0
+1744955681080,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,799,2,2,null,0,4,0
+1744955681083,7,login-4,200,OK,Thread Group 1-2,text,true,,4171,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955681092,51,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6760,722,2,2,null,0,4,0
+1744955681093,51,accts-5,200,OK,Thread Group 1-2,text,true,,6760,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,51,0,0
+1744955681148,6,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,2,0
+1744955681149,6,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955680578,11,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3779,720,2,2,null,0,3006,0
+1744955683583,11,accounts-7,200,OK,Thread Group 1-1,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,11,0,0
+1744955683596,9,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5349,716,2,2,null,0,2,0
+1744955683597,9,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5349,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,9,0,0
+1744955683608,17,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1192,726,2,2,null,0,2,0
+1744955683609,17,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,17,0,0
+1744955683628,13,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5514,864,2,2,null,0,6,0
+1744955683632,13,ac_review-12,200,OK,Thread Group 1-1,text,true,,5514,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,13,0,0
+1744955681157,8,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3780,720,2,2,null,0,3017,0
+1744955684172,8,accounts-7,200,OK,Thread Group 1-2,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,8,0,0
+1744955684183,8,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5349,716,2,2,null,0,2,0
+1744955684184,8,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5349,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,8,0,0
+1744955684194,26,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1190,726,2,2,null,0,2,0
+1744955684195,26,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1190,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,25,0,0
+1744955684222,7,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5514,864,2,2,null,0,4,0
+1744955684224,7,ac_review-12,200,OK,Thread Group 1-2,text,true,,5514,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,7,0,0
+1744955683648,80,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3561,981,2,2,null,0,3012,0
+1744955686658,80,ac_review-13,200,OK,Thread Group 1-1,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,80,0,0
+1744955686741,10,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3862,874,2,2,null,0,3,0
+1744955686743,10,pay-14,200,OK,Thread Group 1-1,text,true,,3862,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,10,0,0
+1744955686755,134,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3492,1379,2,2,null,0,4,0
+1744955686756,10,pay-15,200,OK,Thread Group 1-1,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,9,0,0
+1744955686768,124,logout-16,200,OK,Thread Group 1-1,text,true,,864,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,124,0,0
+1744955686894,3,Debug Sampler,200,OK,Thread Group 1-1,text,true,,885,0,2,2,null,0,0,0
+1744955686900,19,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6443,1375,2,2,null,0,8,0
+1744955686902,11,launch-1,200,OK,Thread Group 1-1,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,11,0,0
+1744955686917,8,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,8,0,0
+1744955684234,63,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3563,981,2,2,null,0,3015,0
+1744955687248,63,ac_review-13,200,OK,Thread Group 1-2,text,true,,3563,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,61,0,0
+1744955687313,7,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3862,874,2,2,null,0,2,0
+1744955687315,7,pay-14,200,OK,Thread Group 1-2,text,true,,3862,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,6,0,0
+1744955687323,124,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3491,1379,2,2,null,0,4,0
+1744955687324,8,pay-15,200,OK,Thread Group 1-2,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,8,0,0
+1744955687334,116,logout-16,200,OK,Thread Group 1-2,text,true,,864,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,116,0,0
+1744955687452,2,Debug Sampler,200,OK,Thread Group 1-2,text,true,,885,0,2,2,null,0,0,0
+1744955687456,15,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6442,1375,2,2,null,0,7,0
+1744955687458,8,launch-1,200,OK,Thread Group 1-2,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,8,0,0
+1744955687469,7,launch-2,200,OK,Thread Group 1-2,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,7,0,0
+1744955686927,38,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3600,966,2,2,null,0,3003,0
+1744955689931,38,launch-3,200,OK,Thread Group 1-1,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=K9XvxYacAvcJTy3pHxTkM6bvK8cM82ZoriiRvKjZ5m-S4qAEMugY!-152464794!1713419683484,37,0,0
+1744955689970,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,799,2,2,null,0,3,0
+1744955689972,7,login-4,200,OK,Thread Group 1-1,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955689981,26,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6772,722,2,2,null,0,3,0
+1744955689983,26,accts-5,200,OK,Thread Group 1-1,text,true,,6772,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,26,0,0
+1744955690011,7,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,722,2,2,null,0,2,0
+1744955690012,7,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955687479,62,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3602,966,2,2,null,0,3005,0
+1744955690483,62,launch-3,200,OK,Thread Group 1-2,text,true,,3602,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=dM3vxYjCLWg2r1NDoNykIr3PitDqhA0tN1BrFXFlUHrufT64OEO4!-152464794!1713419684034,61,0,0
+1744955690546,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,799,2,2,null,0,2,0
+1744955690548,7,login-4,200,OK,Thread Group 1-2,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955690556,24,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6756,722,2,2,null,0,3,0
+1744955690557,24,accts-5,200,OK,Thread Group 1-2,text,true,,6756,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,24,0,0
+1744955690585,7,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,722,2,2,null,0,2,0
+1744955690586,7,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4170,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955690021,12,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3780,720,2,2,null,0,3011,0
+1744955693030,12,accounts-7,200,OK,Thread Group 1-1,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,12,0,0
+1744955693043,9,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,3,0
+1744955693045,9,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,9,0,0
+1744955693056,27,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,1,0
+1744955693057,27,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,26,0,0
+1744955693085,7,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,2,0
+1744955693086,7,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,7,0,0
+1744955690594,9,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3779,720,2,2,null,0,3006,0
+1744955693598,9,accounts-7,200,OK,Thread Group 1-2,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,9,0,0
+1744955693609,7,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5351,716,2,2,null,0,2,0
+1744955693610,7,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5351,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,7,0,0
+1744955693619,20,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1191,726,2,2,null,0,1,0
+1744955693620,20,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,19,0,0
+1744955693641,8,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5513,864,2,2,null,0,2,0
+1744955693642,8,ac_review-12,200,OK,Thread Group 1-2,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,8,0,0
+1744955693095,32,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3562,981,2,2,null,0,3007,0
+1744955696100,32,ac_review-13,200,OK,Thread Group 1-1,text,true,,3562,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,31,0,0
+1744955696134,12,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3860,874,2,2,null,0,1,0
+1744955696135,12,pay-14,200,OK,Thread Group 1-1,text,true,,3860,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,11,0,0
+1744955696148,137,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3491,1379,2,2,null,0,6,0
+1744955696151,8,pay-15,200,OK,Thread Group 1-1,text,true,,2626,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,8,0,0
+1744955696161,129,logout-16,200,OK,Thread Group 1-1,text,true,,865,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,129,0,0
+1744955696291,2,Debug Sampler,200,OK,Thread Group 1-1,text,true,,882,0,2,2,null,0,0,0
+1744955696294,22,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6441,1375,2,2,null,0,5,0
+1744955696296,10,launch-1,200,OK,Thread Group 1-1,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,10,0,0
+1744955696308,12,launch-2,200,OK,Thread Group 1-1,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,12,0,0
+1744955693651,60,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3562,981,2,2,null,0,3016,0
+1744955696664,60,ac_review-13,200,OK,Thread Group 1-2,text,true,,3562,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,60,0,0
+1744955696728,14,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3859,874,2,2,null,0,1,0
+1744955696729,14,pay-14,200,OK,Thread Group 1-2,text,true,,3859,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,14,0,0
+1744955696744,177,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3485,1379,2,2,null,0,3,0
+1744955696745,37,pay-15,200,OK,Thread Group 1-2,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,37,0,0
+1744955696784,140,logout-16,200,OK,Thread Group 1-2,text,true,,858,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,139,0,0
+1744955696925,1,Debug Sampler,200,OK,Thread Group 1-2,text,true,,882,0,2,2,null,0,0,0
+1744955696927,23,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6443,1375,2,2,null,0,4,0
+1744955696928,11,launch-1,200,OK,Thread Group 1-2,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,11,0,0
+1744955696940,12,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,12,0,0
+1744955696322,41,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3602,966,2,2,null,0,3009,0
+1744955699330,41,launch-3,200,OK,Thread Group 1-1,text,true,,3602,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=ngvvxatKnDl1Ckr7-Lcp44OTL-TSI-4G3u7IIBjT5cT8fW3jeZX8!-152464794!1713419692874,41,0,0
+1744955699373,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,799,2,2,null,0,2,0
+1744955699374,7,login-4,200,OK,Thread Group 1-1,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955699382,21,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6781,722,2,2,null,0,4,0
+1744955699384,21,accts-5,200,OK,Thread Group 1-1,text,true,,6781,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,21,0,0
+1744955699407,6,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4171,722,2,2,null,0,1,0
+1744955699408,6,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955696955,69,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3600,966,2,2,null,0,3003,0
+1744955699957,69,launch-3,200,OK,Thread Group 1-2,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=F93vxa3BOCUofyVp8faT6JQ-oS14m9Zt0vcfiK6wqntcmX5je9zB!-152464794!1713419693505,69,0,0
+1744955700027,8,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,799,2,2,null,0,2,0
+1744955700028,8,login-4,200,OK,Thread Group 1-2,text,true,,4171,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,8,0,0
+1744955700038,28,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6768,722,2,2,null,0,4,0
+1744955700039,28,accts-5,200,OK,Thread Group 1-2,text,true,,6768,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,28,0,0
+1744955700072,7,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,2,0
+1744955700073,7,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955699415,12,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3779,720,2,2,null,0,3005,0
+1744955702419,12,accounts-7,200,OK,Thread Group 1-1,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,12,0,0
+1744955702433,12,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,2,0
+1744955702434,12,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,12,0,0
+1744955702447,19,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,5,0
+1744955702450,19,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,19,0,0
+1744955702471,11,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,2,0
+1744955702472,11,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,11,0,0
+1744955700082,13,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3779,720,2,2,null,0,3017,0
+1744955703098,13,accounts-7,200,OK,Thread Group 1-2,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,13,0,0
+1744955703113,7,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5348,716,2,2,null,0,2,0
+1744955703114,7,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5348,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,7,0,0
+1744955703122,18,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1192,726,2,2,null,0,2,0
+1744955703123,18,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,18,0,0
+1744955703142,20,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5513,864,2,2,null,0,2,0
+1744955703143,20,ac_review-12,200,OK,Thread Group 1-2,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,20,0,0
+1744955702484,57,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3560,981,2,2,null,0,3012,0
+1744955705495,57,ac_review-13,200,OK,Thread Group 1-1,text,true,,3560,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,57,0,0
+1744955705554,8,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3861,874,2,2,null,0,2,0
+1744955705555,8,pay-14,200,OK,Thread Group 1-1,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,8,0,0
+1744955705565,129,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3491,1379,2,2,null,0,4,0
+1744955705566,6,pay-15,200,OK,Thread Group 1-1,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,6,0,0
+1744955705574,123,logout-16,200,OK,Thread Group 1-1,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,123,0,0
+1744955705699,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,882,0,2,2,null,0,0,0
+1744955705708,21,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6442,1375,2,2,null,0,5,0
+1744955705710,14,launch-1,200,OK,Thread Group 1-1,text,true,,3264,674,2,2,http://192.168.0.151:7001/LoanIQ/,13,0,0
+1744955705725,7,launch-2,200,OK,Thread Group 1-1,text,true,,3178,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,7,0,0
+1744955703165,30,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3524,981,2,2,null,0,3013,0
+1744955706177,30,ac_review-13,200,OK,Thread Group 1-2,text,true,,3524,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,29,0,0
+1744955706208,7,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3861,874,2,2,null,0,2,0
+1744955706209,7,pay-14,200,OK,Thread Group 1-2,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,7,0,0
+1744955706217,126,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3488,1379,2,2,null,0,3,0
+1744955706218,5,pay-15,200,OK,Thread Group 1-2,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,5,0,0
+1744955706224,121,logout-16,200,OK,Thread Group 1-2,text,true,,861,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,121,0,0
+1744955706346,1,Debug Sampler,200,OK,Thread Group 1-2,text,true,,819,0,2,2,null,0,0,0
+1744955706348,10,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6440,1375,2,2,null,0,2,0
+1744955706349,5,launch-1,200,OK,Thread Group 1-2,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,5,0,0
+1744955706355,5,launch-2,200,OK,Thread Group 1-2,text,true,,3175,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,5,0,0
+1744955705735,38,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3599,966,2,2,null,0,3016,0
+1744955708750,38,launch-3,200,OK,Thread Group 1-1,text,true,,3599,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=G5fvxdAM44QgsGSHlUmXKdJ2g8shL6MS9el-1SIMTagQoIn9swEJ!-152464794!1713419702284,38,0,0
+1744955708790,10,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4169,799,2,2,null,0,1,0
+1744955708791,10,login-4,200,OK,Thread Group 1-1,text,true,,4169,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,10,0,0
+1744955708802,53,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6775,722,2,2,null,0,2,0
+1744955708803,53,accts-5,200,OK,Thread Group 1-1,text,true,,6775,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,53,0,0
+1744955708858,8,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4170,722,2,2,null,0,2,0
+1744955708859,8,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4170,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,8,0,0
+1744955706360,41,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3599,966,2,2,null,0,3004,0
+1744955709363,41,launch-3,200,OK,Thread Group 1-2,text,true,,3599,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=ISPvxdKMhaSjFbLVCkXSPkDnDp6kuusbJvtx8nHqzhL-VZPSdVws!-152464794!1713419702924,41,0,0
+1744955709406,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,799,2,2,null,0,2,0
+1744955709407,7,login-4,200,OK,Thread Group 1-2,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955709416,26,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6767,722,2,2,null,0,2,0
+1744955709417,26,accts-5,200,OK,Thread Group 1-2,text,true,,6767,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,26,0,0
+1744955709445,6,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,1,0
+1744955709446,6,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744955708869,12,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3778,720,2,2,null,0,3004,0
+1744955711872,12,accounts-7,200,OK,Thread Group 1-1,text,true,,3778,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,12,0,0
+1744955711886,8,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5346,716,2,2,null,0,2,0
+1744955711887,8,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5346,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,8,0,0
+1744955711896,19,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1192,726,2,2,null,0,3,0
+1744955711898,19,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,19,0,0
+1744955711918,9,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,1,0
+1744955711919,9,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,9,0,0
+1744955709453,9,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3776,720,2,2,null,0,3009,0
+1744955712461,9,accounts-7,200,OK,Thread Group 1-2,text,true,,3776,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,9,0,0
+1744955712471,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5350,716,2,2,null,0,2,0
+1744955712472,6,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,6,0,0
+1744955712479,21,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1191,726,2,2,null,0,2,0
+1744955712481,21,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,20,0,0
+1744955712503,6,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5513,864,2,2,null,0,3,0
+1744955712505,6,ac_review-12,200,OK,Thread Group 1-2,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,6,0,0
+1744955711929,37,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3527,981,2,2,null,0,3005,0
+1744955714933,37,ac_review-13,200,OK,Thread Group 1-1,text,true,,3527,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,36,0,0
+1744955714972,7,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3862,874,2,2,null,0,3,0
+1744955714974,7,pay-14,200,OK,Thread Group 1-1,text,true,,3862,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,6,0,0
+1744955714984,124,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3491,1379,2,2,null,0,3,0
+1744955714985,7,pay-15,200,OK,Thread Group 1-1,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,6,0,0
+1744955714993,117,logout-16,200,OK,Thread Group 1-1,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,117,0,0
+1744955715112,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,819,0,2,2,null,0,0,0
+1744955715114,20,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6443,1375,2,2,null,0,5,0
+1744955715117,9,launch-1,200,OK,Thread Group 1-1,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,9,0,0
+1744955715128,11,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,11,0,0
+1744955712513,56,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3563,981,2,2,null,0,3014,0
+1744955715524,56,ac_review-13,200,OK,Thread Group 1-2,text,true,,3563,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,56,0,0
+1744955715584,10,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3862,874,2,2,null,0,3,0
+1744955715586,10,pay-14,200,OK,Thread Group 1-2,text,true,,3862,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,10,0,0
+1744955715598,124,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3488,1379,2,2,null,0,5,0
+1744955715601,7,pay-15,200,OK,Thread Group 1-2,text,true,,2625,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,7,0,0
+1744955715610,117,logout-16,200,OK,Thread Group 1-2,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,117,0,0
+1744955715727,1,Debug Sampler,200,OK,Thread Group 1-2,text,true,,882,0,2,2,null,0,0,0
+1744955715728,11,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6442,1375,2,2,null,0,4,0
+1744955715730,5,launch-1,200,OK,Thread Group 1-2,text,true,,3267,674,2,2,http://192.168.0.151:7001/LoanIQ/,5,0,0
+1744955715736,6,launch-2,200,OK,Thread Group 1-2,text,true,,3175,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744955715141,33,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3601,966,2,2,null,0,3003,0
+1744955718143,33,launch-3,200,OK,Thread Group 1-1,text,true,,3601,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=6rLvxfTP-E8FAmVMu5lQ376NVJlETY3CJrdosjhzapaQlLZhjzm4!-152464794!1713419711695,33,0,0
+1744955718177,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,799,2,2,null,0,2,0
+1744955718178,7,login-4,200,OK,Thread Group 1-1,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955718187,19,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6741,722,2,2,null,0,2,0
+1744955718188,19,accts-5,200,OK,Thread Group 1-1,text,true,,6741,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,19,0,0
+1744955718208,8,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4171,722,2,2,null,0,2,0
+1744955718209,8,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,8,0,0
+1744955715743,53,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3599,966,2,2,null,0,3016,0
+1744955718758,53,launch-3,200,OK,Thread Group 1-2,text,true,,3599,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=ZefvxfcwSHK9A-aCYs9TDVyZji-Ygr6T_yV54AME2X3bngXzu67h!-152464794!1713419712304,53,0,0
+1744955718812,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,799,2,2,null,0,2,0
+1744955718813,7,login-4,200,OK,Thread Group 1-2,text,true,,4171,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744955718824,19,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6741,722,2,2,null,0,2,0
+1744955718825,19,accts-5,200,OK,Thread Group 1-2,text,true,,6741,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,19,0,0
+1744955718846,5,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,2,0
+1744955718847,5,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,5,0,0
+1744955718218,9,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3779,720,2,2,null,0,3018,0
+1744955721235,9,accounts-7,200,OK,Thread Group 1-1,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,9,0,0
+1744955721245,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,3,0
+1744955721247,6,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,6,0,0
+1744955721254,18,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1190,726,2,2,null,0,2,0
+1744955721256,18,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1190,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,18,0,0
+1744955721275,8,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,2,0
+1744955721276,8,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,8,0,0
+1744955718854,8,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3779,720,2,2,null,0,3011,0
+1744955721864,8,accounts-7,200,OK,Thread Group 1-2,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,8,0,0
+1744955721873,7,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5351,716,2,2,null,0,2,0
+1744955721874,7,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5351,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,7,0,0
+1744955721882,17,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1192,726,2,2,null,0,2,0
+1744955721884,17,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,17,0,0
+1744955721902,5,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5513,864,2,2,null,0,2,0
+1744955721903,5,ac_review-12,200,OK,Thread Group 1-2,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,5,0,0
+1744955721286,51,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3561,981,2,2,null,0,3007,0
+1744955724292,51,ac_review-13,200,OK,Thread Group 1-1,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,50,0,0
+1744955724344,5,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3861,874,2,2,null,0,2,0
+1744955724345,5,pay-14,200,OK,Thread Group 1-1,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,5,0,0
+1744955724351,124,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3490,1379,2,2,null,0,2,0
+1744955724352,4,pay-15,200,OK,Thread Group 1-1,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,4,0,0
+1744955724357,120,logout-16,200,OK,Thread Group 1-1,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,119,0,0
+1744955724477,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,885,0,2,2,null,0,0,0
+1744955724478,22,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6444,1375,2,2,null,0,5,0
+1744955724480,10,launch-1,200,OK,Thread Group 1-1,text,true,,3267,674,2,2,http://192.168.0.151:7001/LoanIQ/,10,0,0
+1744955724492,12,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,11,0,0
+1744955724505,0,02login,,,Thread Group 1-1,,true,,0,0,2,2,null,0,0,0
+1744955721909,50,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3562,981,1,1,null,0,3004,0
+1744955724912,50,ac_review-13,200,OK,Thread Group 1-2,text,true,,3562,981,1,1,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,50,0,0
+1744955724963,5,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3861,874,1,1,null,0,2,0
+1744955724964,5,pay-14,200,OK,Thread Group 1-2,text,true,,3861,874,1,1,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,5,0,0
+1744955724971,124,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3489,1379,1,1,null,0,3,0
+1744955724971,5,pay-15,200,OK,Thread Group 1-2,text,true,,2626,724,1,1,http://192.168.0.151:7001/LoanIQ/Logout.jsp,5,0,0
+1744955724978,119,logout-16,200,OK,Thread Group 1-2,text,true,,863,655,1,1,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,119,0,0
+1744955725098,2,Debug Sampler,200,OK,Thread Group 1-2,text,true,,882,0,1,1,null,0,0,0
+1744955725101,16,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6443,1375,1,1,null,0,3,0
+1744955725102,7,launch-1,200,OK,Thread Group 1-2,text,true,,3266,674,1,1,http://192.168.0.151:7001/LoanIQ/,7,0,0
+1744955725110,9,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,1,1,http://192.168.0.151:7001/LoanIQ/login.jsp,9,0,0
+1744955725121,0,02login,,,Thread Group 1-2,,true,,0,0,1,1,null,0,0,0
+1744956217710,53,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6576,1179,1,1,null,0,98,31
+1744956217803,48,launch-1,200,OK,Thread Group 1-1,text,true,,3399,478,1,1,http://192.168.0.151:7001/LoanIQ/,47,0,31
+1744956217854,5,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,1,1,http://192.168.0.151:7001/LoanIQ/login.jsp,5,0,0
+1744956218686,41,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6573,1179,2,2,null,0,5,5
+1744956218688,26,launch-1,200,OK,Thread Group 1-2,text,true,,3397,478,2,2,http://192.168.0.151:7001/LoanIQ/,25,0,5
+1744956218716,15,launch-2,200,OK,Thread Group 1-2,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,15,0,0
+1744956217867,69,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3602,966,2,2,null,0,3004,0
+1744956220869,69,launch-3,200,OK,Thread Group 1-1,text,true,,3602,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=w7DvzaCYRS3nEznX33VJCl6oPV8zgMmjres4Ts9OedWbY_D63LVn!-152464794!1713420214424,67,0,0
+1744956220943,6,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4170,799,2,2,null,0,3,0
+1744956220945,6,login-4,200,OK,Thread Group 1-1,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744956220952,22,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6736,722,2,2,null,0,5,0
+1744956220953,22,accts-5,200,OK,Thread Group 1-1,text,true,,6736,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,21,0,0
+1744956220981,6,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4171,722,2,2,null,0,2,0
+1744956220982,6,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744956218733,28,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3600,966,2,2,null,0,3013,0
+1744956221745,28,launch-3,200,OK,Thread Group 1-2,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=FXvvzaP-xzlSbruTqw51dsKDHIBRt4-utkk49LBq3la_nb1VxibU!-152464794!1713420215294,28,0,0
+1744956221774,4,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,799,2,2,null,0,2,0
+1744956221775,4,login-4,200,OK,Thread Group 1-2,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,4,0,0
+1744956221780,18,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6743,722,2,2,null,0,2,0
+1744956221781,18,accts-5,200,OK,Thread Group 1-2,text,true,,6743,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,18,0,0
+1744956221800,8,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,0,0
+1744956221800,8,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,8,0,0
+1744956220990,10,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3779,720,2,2,null,0,3002,0
+1744956223992,10,accounts-7,200,OK,Thread Group 1-1,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,10,0,0
+1744956224003,9,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5351,716,2,2,null,0,0,0
+1744956224003,9,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5351,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,9,0,0
+1744956224012,16,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,2,0
+1744956224013,16,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,16,0,0
+1744956224030,4,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5512,864,2,2,null,0,2,0
+1744956224031,4,ac_review-12,200,OK,Thread Group 1-1,text,true,,5512,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,4,0,0
+1744956221808,5,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3778,720,2,2,null,0,3003,0
+1744956224811,5,accounts-7,200,OK,Thread Group 1-2,text,true,,3778,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,5,0,0
+1744956224817,5,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5350,716,2,2,null,0,1,0
+1744956224817,5,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,5,0,0
+1744956224823,21,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1192,726,2,2,null,0,1,0
+1744956224824,21,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,21,0,0
+1744956224846,10,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5513,864,2,2,null,0,0,0
+1744956224846,10,ac_review-12,200,OK,Thread Group 1-2,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,10,0,0
+1744956224036,32,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3561,981,2,2,null,0,3005,0
+1744956227040,32,ac_review-13,200,OK,Thread Group 1-1,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,32,0,0
+1744956227074,16,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3862,874,2,2,null,0,0,0
+1744956227074,16,pay-14,200,OK,Thread Group 1-1,text,true,,3862,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,16,0,0
+1744956227091,160,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3488,1379,2,2,null,0,2,31
+1744956227091,18,pay-15,200,OK,Thread Group 1-1,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,18,0,0
+1744956227110,142,logout-16,200,OK,Thread Group 1-1,text,true,,861,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,142,0,31
+1744956227258,4,Debug Sampler,200,OK,Thread Group 1-1,text,true,,882,0,2,2,null,0,0,0
+1744956227263,22,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6441,1375,2,2,null,0,1,0
+1744956227263,8,launch-1,200,OK,Thread Group 1-1,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,8,0,0
+1744956227272,14,launch-2,200,OK,Thread Group 1-1,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,13,0,0
+1744956224857,62,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3561,981,2,2,null,0,3016,0
+1744956227873,62,ac_review-13,200,OK,Thread Group 1-2,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,62,0,0
+1744956227937,6,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3861,874,2,2,null,0,3,0
+1744956227939,6,pay-14,200,OK,Thread Group 1-2,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,6,0,0
+1744956227947,153,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3486,1379,2,2,null,0,6,15
+1744956227948,7,pay-15,200,OK,Thread Group 1-2,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,7,0,0
+1744956227959,146,logout-16,200,OK,Thread Group 1-2,text,true,,858,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,145,0,15
+1744956228108,3,Debug Sampler,200,OK,Thread Group 1-2,text,true,,885,0,2,2,null,0,0,0
+1744956228112,14,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6444,1375,2,2,null,0,5,0
+1744956228114,8,launch-1,200,OK,Thread Group 1-2,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,7,0,0
+1744956228124,6,launch-2,200,OK,Thread Group 1-2,text,true,,3178,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744956227286,42,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3601,966,2,2,null,0,3004,0
+1744956230290,42,launch-3,200,OK,Thread Group 1-1,text,true,,3601,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=VSDvzcVu8qEzfZ1Qk84cIK_DsDmfz-4oxkpNlJ0NWV8QQ9vPgw6k!-152464794!1713420223854,42,0,0
+1744956230333,11,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4170,799,2,2,null,0,1,0
+1744956230334,11,login-4,200,OK,Thread Group 1-1,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,11,0,0
+1744956230346,17,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6747,722,2,2,null,0,1,0
+1744956230346,17,accts-5,200,OK,Thread Group 1-1,text,true,,6747,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,17,0,0
+1744956230364,9,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4171,722,2,2,null,0,1,0
+1744956230365,9,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,9,0,0
+1744956228131,54,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3600,966,2,2,null,0,3011,0
+1744956231142,54,launch-3,200,OK,Thread Group 1-2,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=n-fvzcjAvaY3M-NmtNLzXB-ec9-yAv12nHw7gsQ7mpKcOljymzGm!-152464794!1713420224704,54,0,0
+1744956231197,4,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,799,2,2,null,0,1,0
+1744956231198,4,login-4,200,OK,Thread Group 1-2,text,true,,4171,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,4,0,0
+1744956231202,24,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6762,722,2,2,null,0,1,0
+1744956231203,24,accts-5,200,OK,Thread Group 1-2,text,true,,6762,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,23,0,0
+1744956231227,4,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,722,2,2,null,0,1,0
+1744956231228,4,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4170,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,4,0,0
+1744956230375,10,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3779,720,2,2,null,0,3016,0
+1744956233390,10,accounts-7,200,OK,Thread Group 1-1,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,9,0,0
+1744956233401,10,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,2,0
+1744956233402,10,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,9,0,0
+1744956233414,16,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,2,0
+1744956233415,16,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,15,0,0
+1744956233432,6,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,2,0
+1744956233433,6,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,6,0,0
+1744956231233,8,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3780,720,2,2,null,0,3009,0
+1744956234241,8,accounts-7,200,OK,Thread Group 1-2,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,8,0,0
+1744956234249,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5349,716,2,2,null,0,2,0
+1744956234251,6,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5349,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,5,0,0
+1744956234258,22,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1191,726,2,2,null,0,0,0
+1744956234258,22,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,22,0,0
+1744956234281,4,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5514,864,2,2,null,0,0,0
+1744956234281,4,ac_review-12,200,OK,Thread Group 1-2,text,true,,5514,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,4,0,0
+1744956233440,34,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3561,981,2,2,null,0,3003,0
+1744956236442,34,ac_review-13,200,OK,Thread Group 1-1,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,34,0,0
+1744956236477,21,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3861,874,2,2,null,0,1,0
+1744956236477,21,pay-14,200,OK,Thread Group 1-1,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,21,0,0
+1744956236499,112,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3492,1379,2,2,null,0,1,0
+1744956236499,4,pay-15,200,OK,Thread Group 1-1,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,4,0,0
+1744956236503,108,logout-16,200,OK,Thread Group 1-1,text,true,,865,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,108,0,0
+1744956236613,2,Debug Sampler,200,OK,Thread Group 1-1,text,true,,885,0,2,2,null,0,0,0
+1744956236616,26,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6442,1375,2,2,null,0,2,0
+1744956236617,11,launch-1,200,OK,Thread Group 1-1,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,11,0,0
+1744956236629,15,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,15,0,0
+1744956234285,48,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3563,981,2,2,null,0,3007,0
+1744956237291,48,ac_review-13,200,OK,Thread Group 1-2,text,true,,3563,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,48,0,0
+1744956237340,5,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3861,874,2,2,null,0,2,0
+1744956237341,5,pay-14,200,OK,Thread Group 1-2,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,5,0,0
+1744956237347,114,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3491,1379,2,2,null,0,2,0
+1744956237348,3,pay-15,200,OK,Thread Group 1-2,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,3,0,0
+1744956237352,111,logout-16,200,OK,Thread Group 1-2,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,110,0,0
+1744956237463,1,Debug Sampler,200,OK,Thread Group 1-2,text,true,,885,0,2,2,null,0,0,0
+1744956237465,7,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6442,1375,2,2,null,0,1,0
+1744956237465,4,launch-1,200,OK,Thread Group 1-2,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,4,0,0
+1744956237470,3,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,3,0,0
+1744956236644,143,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3602,966,2,2,null,0,3004,0
+1744956239647,143,launch-3,200,OK,Thread Group 1-1,text,true,,3602,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=Czrvzen0chaNAYVDZuX2pgDGenVjmMWDJzqnDCXb2-SSH7oB3lN3!-152464794!1713420233204,143,0,0
+1744956239792,9,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4171,799,2,2,null,0,2,0
+1744956239793,9,login-4,200,OK,Thread Group 1-1,text,true,,4171,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,9,0,0
+1744956239804,42,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6773,722,2,2,null,0,2,0
+1744956239805,42,accts-5,200,OK,Thread Group 1-1,text,true,,6773,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,38,0,0
+1744956239848,6,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,722,2,2,null,0,3,0
+1744956239850,6,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744956237474,63,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3603,966,2,2,null,0,3002,0
+1744956240475,63,launch-3,200,OK,Thread Group 1-2,text,true,,3603,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=56Pvze1GdzB6qeu6DxiPWDrbfrBg4IFVKaYScqV96TH0dCrmWmbx!-152464794!1713420234054,63,0,0
+1744956240539,77,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4172,799,2,2,null,0,2,0
+1744956240540,77,login-4,200,OK,Thread Group 1-2,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,77,0,0
+1744956240618,33,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6757,722,2,2,null,0,2,0
+1744956240619,33,accts-5,200,OK,Thread Group 1-2,text,true,,6757,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,32,0,0
+1744956240655,5,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,722,2,2,null,0,1,0
+1744956240655,5,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4171,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,5,0,0
+1744956239857,7,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3778,720,2,2,null,0,3010,0
+1744956242867,7,accounts-7,200,OK,Thread Group 1-1,text,true,,3778,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,6,0,0
+1744956242874,7,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,0,0
+1744956242874,7,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,7,0,0
+1744956242881,18,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,1,0
+1744956242881,18,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,18,0,0
+1744956242900,5,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,1,0
+1744956242900,5,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,5,0,0
+1744956240661,4,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3779,720,2,2,null,0,3011,0
+1744956243672,4,accounts-7,200,OK,Thread Group 1-2,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,3,0,0
+1744956243676,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5349,716,2,2,null,0,2,0
+1744956243677,6,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5349,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,6,0,0
+1744956243684,25,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1190,726,2,2,null,0,0,0
+1744956243684,25,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1190,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,25,0,0
+1744956243710,11,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5512,864,2,2,null,0,0,0
+1744956243710,11,ac_review-12,200,OK,Thread Group 1-2,text,true,,5512,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,11,0,0
+1744956242906,54,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3560,981,2,2,null,0,3003,0
+1744956245908,54,ac_review-13,200,OK,Thread Group 1-1,text,true,,3560,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,54,0,0
+1744956245964,19,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3861,874,2,2,null,0,1,0
+1744956245964,19,pay-14,200,OK,Thread Group 1-1,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,19,0,0
+1744956245984,128,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3487,1379,2,2,null,0,2,0
+1744956245984,7,pay-15,200,OK,Thread Group 1-1,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,7,0,0
+1744956245992,121,logout-16,200,OK,Thread Group 1-1,text,true,,860,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,121,0,0
+1744956246114,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,882,0,2,2,null,0,0,0
+1744956246115,13,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6443,1375,2,2,null,0,1,0
+1744956246115,7,launch-1,200,OK,Thread Group 1-1,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,7,0,0
+1744956246122,6,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744956243721,58,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3561,981,2,2,null,0,3003,0
+1744956246723,58,ac_review-13,200,OK,Thread Group 1-2,text,true,,3561,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,58,0,0
+1744956246782,4,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3860,874,2,2,null,0,1,0
+1744956246783,4,pay-14,200,OK,Thread Group 1-2,text,true,,3860,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,4,0,0
+1744956246787,116,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3490,1379,2,2,null,0,2,0
+1744956246788,3,pay-15,200,OK,Thread Group 1-2,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,2,0,0
+1744956246791,113,logout-16,200,OK,Thread Group 1-2,text,true,,863,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,113,0,0
+1744956246905,0,Debug Sampler,200,OK,Thread Group 1-2,text,true,,882,0,2,2,null,0,0,0
+1744956246905,5,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6442,1375,2,2,null,0,2,0
+1744956246906,2,launch-1,200,OK,Thread Group 1-2,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,2,0,0
+1744956246909,3,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,3,0,0
+1744956246129,35,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3600,966,2,2,null,0,3005,0
+1744956249134,35,launch-3,200,OK,Thread Group 1-1,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=efLvzg8QOgtjl1lyYRXCW8ViFmJv_952pbAJbZFdsyDsUwn7MdOx!-152464794!1713420242704,34,0,0
+1744956249170,6,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4169,799,2,2,null,0,0,0
+1744956249170,6,login-4,200,OK,Thread Group 1-1,text,true,,4169,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,6,0,0
+1744956249176,18,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6782,722,2,2,null,0,2,0
+1744956249177,18,accts-5,200,OK,Thread Group 1-1,text,true,,6782,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,18,0,0
+1744956249197,10,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4170,722,2,2,null,0,1,0
+1744956249198,10,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4170,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,10,0,0
+1744956246912,54,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3600,966,2,2,null,0,3010,0
+1744956249922,54,launch-3,200,OK,Thread Group 1-2,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=u9TvzhImymYslbrP0Z-Y0KzL2l2J6uKRKKRxOCEnj5Ef1z9ixGUC!-152464794!1713420243494,54,0,0
+1744956249976,4,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,799,2,2,null,0,0,0
+1744956249976,4,login-4,200,OK,Thread Group 1-2,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,3,0,0
+1744956249980,19,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6767,722,2,2,null,0,0,0
+1744956249980,19,accts-5,200,OK,Thread Group 1-2,text,true,,6767,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,19,0,0
+1744956250000,4,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4169,722,2,2,null,0,0,0
+1744956250000,4,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4169,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,4,0,0
+1744956249209,16,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3777,720,2,2,null,0,3014,0
+1744956252222,16,accounts-7,200,OK,Thread Group 1-1,text,true,,3777,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,16,0,0
+1744956252239,7,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,2,0
+1744956252240,7,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,7,0,0
+1744956252248,39,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1192,726,2,2,null,0,1,0
+1744956252249,39,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,38,0,0
+1744956252288,66,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5511,864,2,2,null,0,1,0
+1744956252289,66,ac_review-12,200,OK,Thread Group 1-1,text,true,,5511,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,66,0,0
+1744956250004,14,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3779,720,2,2,null,0,3003,0
+1744956253006,14,accounts-7,200,OK,Thread Group 1-2,text,true,,3779,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,14,0,0
+1744956253022,5,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5349,716,2,2,null,0,1,0
+1744956253023,5,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5349,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,5,0,0
+1744956253029,14,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1192,726,2,2,null,0,1,0
+1744956253030,14,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,14,0,0
+1744956253045,5,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5511,864,2,2,null,0,0,0
+1744956253045,5,ac_review-12,200,OK,Thread Group 1-2,text,true,,5511,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,5,0,0
+1744956252356,55,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3563,981,2,2,null,0,3019,0
+1744956255373,55,ac_review-13,200,OK,Thread Group 1-1,text,true,,3563,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,55,0,0
+1744956255431,15,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3861,874,2,2,null,0,1,0
+1744956255432,15,pay-14,200,OK,Thread Group 1-1,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,15,0,0
+1744956255448,124,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3490,1379,2,2,null,0,1,0
+1744956255448,4,pay-15,200,OK,Thread Group 1-1,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,4,0,0
+1744956255452,120,logout-16,200,OK,Thread Group 1-1,text,true,,862,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,120,0,0
+1744956255574,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,882,0,2,2,null,0,0,0
+1744956255575,13,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6442,1375,2,2,null,0,4,0
+1744956255577,6,launch-1,200,OK,Thread Group 1-1,text,true,,3266,674,2,2,http://192.168.0.151:7001/LoanIQ/,6,0,0
+1744956255585,7,launch-2,200,OK,Thread Group 1-1,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744956253051,25,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3528,981,2,2,null,0,3004,0
+1744956256055,25,ac_review-13,200,OK,Thread Group 1-2,text,true,,3528,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,25,0,0
+1744956256081,4,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3859,874,2,2,null,0,0,0
+1744956256081,4,pay-14,200,OK,Thread Group 1-2,text,true,,3859,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,4,0,0
+1744956256085,180,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3488,1379,2,2,null,0,2,0
+1744956256086,60,pay-15,200,OK,Thread Group 1-2,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,60,0,0
+1744956256147,120,logout-16,200,OK,Thread Group 1-2,text,true,,860,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,119,0,0
+1744956256268,0,Debug Sampler,200,OK,Thread Group 1-2,text,true,,819,0,2,2,null,0,0,0
+1744956256269,18,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6444,1375,2,2,null,0,2,0
+1744956256270,12,launch-1,200,OK,Thread Group 1-2,text,true,,3267,674,2,2,http://192.168.0.151:7001/LoanIQ/,12,0,0
+1744956256283,6,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744956255593,37,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3600,966,2,2,null,0,3012,0
+1744956258605,37,launch-3,200,OK,Thread Group 1-1,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=jH_vzjQE-Bju6VnClcSR5ydsk8Rf5V8sRcOKvcTspv2Ht9CVfojZ!-152464794!1713420252164,37,0,0
+1744956258643,24,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,799,2,2,null,0,2,0
+1744956258644,24,login-4,200,OK,Thread Group 1-1,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,24,0,0
+1744956258669,26,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6777,722,2,2,null,0,2,0
+1744956258670,26,accts-5,200,OK,Thread Group 1-1,text,true,,6777,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,26,0,0
+1744956258697,4,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,722,2,2,null,0,2,0
+1744956258698,4,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,4,0,0
+1744956256290,43,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3600,966,2,2,null,0,3005,0
+1744956259294,43,launch-3,200,OK,Thread Group 1-2,text,true,,3600,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=023vzja7bOSSnkHjnaYHEOofDcKJCtgytVHc8PPoGLuJ5Nt971YQ!-152464794!1713420252859,43,0,0
+1744956259338,5,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4171,799,2,2,null,0,2,0
+1744956259339,5,login-4,200,OK,Thread Group 1-2,text,true,,4171,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,5,0,0
+1744956259345,23,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6768,722,2,2,null,0,3,0
+1744956259347,23,accts-5,200,OK,Thread Group 1-2,text,true,,6768,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,22,0,0
+1744956259371,5,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4170,722,2,2,null,0,1,0
+1744956259372,5,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4170,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,5,0,0
+1744956258703,9,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3780,720,2,2,null,0,3006,0
+1744956261709,9,accounts-7,200,OK,Thread Group 1-1,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,9,0,0
+1744956261718,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,1,0
+1744956261719,6,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,6,0,0
+1744956261725,24,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1192,726,2,2,null,0,1,0
+1744956261726,24,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1192,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,24,0,0
+1744956261750,3,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5513,864,2,2,null,0,1,0
+1744956261751,3,ac_review-12,200,OK,Thread Group 1-1,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,3,0,0
+1744956259378,4,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3780,720,2,2,null,0,3014,0
+1744956262392,4,accounts-7,200,OK,Thread Group 1-2,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,3,0,0
+1744956262396,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5350,716,2,2,null,0,0,0
+1744956262396,6,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,5,0,0
+1744956262402,21,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1191,726,2,2,null,0,1,0
+1744956262402,21,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,21,0,0
+1744956262424,4,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5514,864,2,2,null,0,1,0
+1744956262425,4,ac_review-12,200,OK,Thread Group 1-2,text,true,,5514,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,4,0,0
+1744956261754,33,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3526,981,2,2,null,0,3004,0
+1744956264756,33,ac_review-13,200,OK,Thread Group 1-1,text,true,,3526,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,33,0,0
+1744956264791,7,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3860,874,2,2,null,0,2,0
+1744956264793,7,pay-14,200,OK,Thread Group 1-1,text,true,,3860,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,6,0,0
+1744956264801,129,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3485,1379,2,2,null,0,3,0
+1744956264802,6,pay-15,200,OK,Thread Group 1-1,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,6,0,0
+1744956264809,123,logout-16,200,OK,Thread Group 1-1,text,true,,858,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,123,0,0
+1744956264933,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,819,0,2,2,null,0,0,0
+1744956264935,23,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6442,1375,2,2,null,0,3,0
+1744956264936,17,launch-1,200,OK,Thread Group 1-1,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,17,0,0
+1744956264955,6,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744956262429,59,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3562,981,2,2,null,0,3012,0
+1744956265440,59,ac_review-13,200,OK,Thread Group 1-2,text,true,,3562,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,59,0,0
+1744956265500,22,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3861,874,2,2,null,0,2,0
+1744956265501,22,pay-14,200,OK,Thread Group 1-2,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,22,0,0
+1744956265524,121,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3486,1379,2,2,null,0,3,0
+1744956265525,4,pay-15,200,OK,Thread Group 1-2,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,4,0,0
+1744956265530,117,logout-16,200,OK,Thread Group 1-2,text,true,,859,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,117,0,0
+1744956265649,0,Debug Sampler,200,OK,Thread Group 1-2,text,true,,882,0,2,2,null,0,0,0
+1744956265650,36,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6444,1375,2,2,null,0,4,0
+1744956265652,9,launch-1,200,OK,Thread Group 1-2,text,true,,3267,674,2,2,http://192.168.0.151:7001/LoanIQ/,9,0,0
+1744956265662,27,launch-2,200,OK,Thread Group 1-2,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,27,0,0
+1744956264962,47,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3601,966,2,2,null,0,3009,0
+1744956267971,47,launch-3,200,OK,Thread Group 1-1,text,true,,3601,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=UUPvzlieExgtesPzsivV1FGwbsI1Ma4afu--nh3rK8ZuzXEiBfpO!-152464794!1713420261534,47,0,0
+1744956268019,19,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4170,799,2,2,null,0,1,0
+1744956268019,19,login-4,200,OK,Thread Group 1-1,text,true,,4170,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,19,0,0
+1744956268040,20,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6742,722,2,2,null,0,2,0
+1744956268041,20,accts-5,200,OK,Thread Group 1-1,text,true,,6742,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,20,0,0
+1744956268063,23,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4172,722,2,2,null,0,2,0
+1744956268064,23,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,23,0,0
+1744956265690,49,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3601,966,2,2,null,0,3015,0
+1744956268704,49,launch-3,200,OK,Thread Group 1-2,text,true,,3601,966,2,2,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=vbLvzltkc6R6i50bAFJ9mcVBG50AK4swYPxwfPbA9O9cHoGG5Kqn!-152464794!1713420262244,49,0,0
+1744956268754,7,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4172,799,2,2,null,0,2,0
+1744956268755,7,login-4,200,OK,Thread Group 1-2,text,true,,4172,799,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744956268763,21,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,6742,722,2,2,null,0,2,0
+1744956268764,21,accts-5,200,OK,Thread Group 1-2,text,true,,6742,722,2,2,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,21,0,0
+1744956268786,13,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,4172,722,2,2,null,0,2,0
+1744956268787,13,acc_summarey-6,200,OK,Thread Group 1-2,text,true,,4172,722,2,2,http://192.168.0.151:7001/LoanIQ/accounts.jsp,13,0,0
+1744956268088,27,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3780,720,2,2,null,0,3005,0
+1744956271093,27,accounts-7,200,OK,Thread Group 1-1,text,true,,3780,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,27,0,0
+1744956271120,15,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5350,716,2,2,null,0,1,0
+1744956271121,15,fund_transfer-8,200,OK,Thread Group 1-1,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,15,0,0
+1744956271137,16,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,1191,726,2,2,null,0,0,0
+1744956271137,16,bank to bank -9,200,OK,Thread Group 1-1,text,true,,1191,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,16,0,0
+1744956271153,4,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,5514,864,2,2,null,0,1,0
+1744956271154,4,ac_review-12,200,OK,Thread Group 1-1,text,true,,5514,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,4,0,0
+1744956268801,6,07fund_transfer,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3778,720,2,2,null,0,3007,0
+1744956271808,6,accounts-7,200,OK,Thread Group 1-2,text,true,,3778,720,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer.jsp,6,0,0
+1744956271814,6,08bank to bank ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5350,716,2,2,null,0,1,0
+1744956271815,6,fund_transfer-8,200,OK,Thread Group 1-2,text,true,,5350,716,2,2,http://192.168.0.151:7001/LoanIQ/fund.jsp,6,0,0
+1744956271821,18,09ac_review,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,1190,726,2,2,null,0,1,0
+1744956271822,18,bank to bank -9,200,OK,Thread Group 1-2,text,true,,1190,726,2,2,http://192.168.0.151:7001/LoanIQ/showdet.jsp?taccno=IQ10122,17,0,0
+1744956271840,18,10ac_review_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,5513,864,2,2,null,0,0,0
+1744956271840,18,ac_review-12,200,OK,Thread Group 1-2,text,true,,5513,864,2,2,http://192.168.0.151:7001/LoanIQ/fund1.jsp,18,0,0
+1744956271158,47,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3563,981,2,2,null,0,3005,0
+1744956274162,47,ac_review-13,200,OK,Thread Group 1-1,text,true,,3563,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,47,0,0
+1744956274211,21,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3862,874,2,2,null,0,1,0
+1744956274211,21,pay-14,200,OK,Thread Group 1-1,text,true,,3862,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,21,0,0
+1744956274233,118,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,3493,1379,2,2,null,0,1,0
+1744956274233,7,pay-15,200,OK,Thread Group 1-1,text,true,,2628,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,7,0,0
+1744956274241,111,logout-16,200,OK,Thread Group 1-1,text,true,,865,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,111,0,0
+1744956274352,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,885,0,2,2,null,0,0,0
+1744956274355,12,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,6444,1375,2,2,null,0,2,0
+1744956274355,6,launch-1,200,OK,Thread Group 1-1,text,true,,3267,674,2,2,http://192.168.0.151:7001/LoanIQ/,6,0,0
+1744956274362,6,launch-2,200,OK,Thread Group 1-1,text,true,,3177,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,6,0,0
+1744956271858,97,11pay,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3562,981,2,2,null,0,3016,0
+1744956274873,97,ac_review-13,200,OK,Thread Group 1-2,text,true,,3562,981,2,2,http://192.168.0.151:7001/LoanIQ/FundTransfer1.jsp,97,0,0
+1744956274972,6,12pay_2,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,3861,874,2,2,null,0,1,0
+1744956274973,6,pay-14,200,OK,Thread Group 1-2,text,true,,3861,874,2,2,http://192.168.0.151:7001/LoanIQ/fundtransferresult.jsp,6,0,0
+1744956274980,138,13logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,3492,1379,2,2,null,0,3,0
+1744956274980,16,pay-15,200,OK,Thread Group 1-2,text,true,,2627,724,2,2,http://192.168.0.151:7001/LoanIQ/Logout.jsp,16,0,0
+1744956274998,122,logout-16,200,OK,Thread Group 1-2,text,true,,865,655,2,2,http://edge.microsoft.com/browsernetworktime/time/1/current?cup2key=2%3AK7iKdroIJQxDpDbhnZC27jGpwUE_563RP3JtzSQaZQo&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,122,0,0
+1744956275121,1,Debug Sampler,200,OK,Thread Group 1-2,text,true,,882,0,2,2,null,0,0,0
+1744956275123,11,01launch,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-2,,true,,6441,1375,2,2,null,0,3,0
+1744956275124,6,launch-1,200,OK,Thread Group 1-2,text,true,,3265,674,2,2,http://192.168.0.151:7001/LoanIQ/,6,0,0
+1744956275131,5,launch-2,200,OK,Thread Group 1-2,text,true,,3176,701,2,2,http://192.168.0.151:7001/LoanIQ/login.jsp,5,0,0
+1744956275137,0,02login,,,Thread Group 1-2,,true,,0,0,2,2,null,0,0,0
+1744956274369,110,02login,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,3603,966,1,1,null,0,3001,0
+1744956277370,110,launch-3,200,OK,Thread Group 1-1,text,true,,3603,966,1,1,http://192.168.0.151:7001/LoanIQ/Login?JSESSIONID=AUDvzn1gDEbD8maskAtKsRXVOUb3FRzlOacoA_JZZYz5DEOr5YzH!-152464794!1713420270944,110,0,0
+1744956277481,27,03accts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4171,799,1,1,null,0,0,0
+1744956277481,27,login-4,200,OK,Thread Group 1-1,text,true,,4171,799,1,1,http://192.168.0.151:7001/LoanIQ/accounts.jsp,27,0,0
+1744956277508,50,04acc_summarey,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6742,722,1,1,null,0,1,0
+1744956277509,50,accts-5,200,OK,Thread Group 1-1,text,true,,6742,722,1,1,http://192.168.0.151:7001/LoanIQ/AccountSummary.jsp,46,0,0
+1744956277560,7,06accounts,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4169,722,1,1,null,0,0,0
+1744956277560,7,acc_summarey-6,200,OK,Thread Group 1-1,text,true,,4169,722,1,1,http://192.168.0.151:7001/LoanIQ/accounts.jsp,7,0,0
+1744956277567,0,07fund_transfer,,,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0

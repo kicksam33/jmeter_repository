@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="assets.msn.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1408" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT assets.msn.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<httpSample t="25" it="0" lt="24" ct="10" ts="1749624195062" s="true" lb="launch-1" rc="200" rm="OK" tn="" dt="text" de="ISO-8859-1" by="2702" sc="1" ec="0" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: close
+Date: Wed, 11 Jun 2025 06:43:04 GMT
+Pragma: no-cache
+Content-Length: 2477
+Content-Type: text/html; charset=ISO-8859-1
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Host: 192.168.0.128:7001
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+</requestHeader>
+  <responseData class="java.lang.String">
+
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Welcome To LoanIQ&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;script&gt;
+			var ws =&apos;Welcome To LoanIQ.....      &apos;
+			function marqueStatus()
+			{
+				window.status=ws
+				ws=ws.substring(1,ws.length) + ws.substring(0,1)
+				setTimeout(&apos;marqueStatus()&apos;,150)
+			}
+	&lt;/script&gt;
+	&lt;body style=&quot;background-color:#FFCC99&quot; onload=&quot;marqueStatus()&quot;&gt;
+		&lt;table width=&apos;700&apos; border=&apos;0&apos; align=&apos;center&apos;&gt;
+			&lt;tr&gt; 
+				&lt;td width=&apos;252&apos; height=&apos;87&apos; background=&apos;&apos;&gt;&amp;nbsp;&lt;/td&gt;
+				&lt;td width=&apos;60%&apos; height=&apos;87&apos; valign=&apos;top&apos; background=&apos;&apos;&gt;&lt;div align=&apos;left&apos;&gt;&lt;div align=&apos;left&apos;&gt;&lt;font size=&apos;1&apos;&gt;&lt;br&gt;
+					&lt;font size=&apos;2&apos; face=&apos;Arial, Helvetica, sans-serif&apos;&gt;&lt;strong&gt; &lt;span class=&apos;datestyle&apos;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+					&lt;font color=&apos;#000000&apos;&gt;
+
+
+
+					&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt; 
+			&lt;tr bgcolor=&apos;#6699CC&apos;&gt; 
+				&lt;td height=&apos;20&apos; colspan=&apos;2&apos; valign=&apos;right&apos;&gt;&lt;marquee&gt;&lt;span class=&apos;welcome&apos;&gt;&lt;font color=&apos;#FFFF00&apos;&gt;&lt;strong&gt;Welcome To LoanIQ&lt;/strong&gt;&lt;/font&gt;&lt;/span&gt;&lt;/marquee&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt; 
+				&lt;td height=&quot;42&quot; colspan=&quot;3&quot;&gt; 
+					&lt;table width=&apos;700&apos; border=&apos;0&apos; align=&quot;center&quot;&gt;
+						&lt;td align=&quot;left&quot; width=&quot;21%&quot; height=&quot;23&quot; valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; border=1&gt;&lt;a href=&quot;login.jsp&quot;&gt;&lt;img src=&quot;images/personal.JPG&quot; name=&quot;image1&quot; width=&quot;155&quot; height=&quot;38&quot; border=&quot;0&quot; id=&quot;image1&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+						&lt;td align=&quot;right&quot; width=&quot;17%&quot; height=&quot;23&quot; valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; border=1&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/corporative.JPG&quot; name=&quot;image2&quot; width=&quot;170&quot; height=&quot;38&quot; border=&quot;0&quot; id=&quot;image2&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+						&lt;td align=&quot;center&quot; width=&quot;23%&quot; height=&quot;23&quot; valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; border=1&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/business.JPG&quot; name=&quot;image3&quot; width=&quot;160&quot; height=&quot;38&quot; border=&quot;0&quot; id=&quot;image3&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+						&lt;td align=&quot;left&quot; width=&quot;22%&quot; height=&quot;23&quot; valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; border=1&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/nri.JPG&quot; width=&quot;150&quot; height=&quot;38&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+					&lt;/table&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;table&gt;
+					&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+					&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+					&lt;tr valign=&quot;top&quot; bgcolor=&quot;#FFCC99&quot;&gt;
+						&lt;td height=&quot;16&quot; colspan=&quot;50&quot;&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;&lt;/td&gt;
+				&lt;/table&gt;
+			&lt;/tr&gt;
+			&lt;tr valign=&quot;top&quot; bgcolor=&quot;#6699CC&quot;&gt; 
+				&lt;td height=&quot;16&quot; colspan=&quot;3&quot;&gt; 
+					&lt;div align=&quot;center&quot;&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Copyright 
+					2007 www.arabianbank.com All Rights Reserved&lt;/font&gt;
+					&lt;/div&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://192.168.0.128:7001/LoanIQ/</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="beacons.gcp.gvt2.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1290" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT beacons.gcp.gvt2.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="10" it="0" lt="10" ct="4" ts="1749624204466" s="true" lb="launch-2" rc="200" rm="OK" tn="" dt="text" de="ISO-8859-1" by="2718" sc="1" ec="0" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: close
+Date: Wed, 11 Jun 2025 06:43:13 GMT
+Pragma: no-cache
+Content-Length: 2493
+Content-Type: text/html; charset=ISO-8859-1
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Referer: http://192.168.0.128:7001/LoanIQ/
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Host: 192.168.0.128:7001
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+</requestHeader>
+  <responseData class="java.lang.String">
+
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Welcome To LoanIQ&lt;/title&gt;
+	&lt;/head&gt;
+	
+	
+	&lt;script&gt;
+		var ws =&apos;Welcome To LoanIQ.....      &apos;
+		function marqueStatus()
+		{
+			window.status=ws
+			ws=ws.substring(1,ws.length) + ws.substring(0,1)
+			setTimeout(&apos;marqueStatus()&apos;,150)
+		}
+		function validLogin()
+		{
+			var lname=document.login.accno.value;
+			var pass=document.login.password.value;
+
+
+			if (login.accno.value.length==0)
+			{
+				alert(&apos;Must Enter Accountno&apos;);
+				login.accno.focus();
+				return false;
+			}
+			if (login.password.value.length==0)
+			{
+				alert(&apos;Must Enter Password&apos;);
+				login.password.focus();
+				return false;
+			}
+			return true;
+		}
+
+	&lt;/script&gt;
+
+	
+	&lt;body style=&quot;background-color:#FFCC99&quot; onLoad=&quot;marqueStatus()&quot;&gt;
+		&lt;form name=&quot;login&quot; action=&quot;./Login?JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228!1749624011624&quot; method=&quot;post&quot; onsubmit=&quot;return validLogin()&quot;&gt;
+		
+			&lt;table bgcolor=&quot;#FFCC99&quot; width=&apos;700&apos; border=&apos;0&apos; align=&apos;center&apos;&gt;
+				&lt;tr&gt; 
+					&lt;td width=&apos;252&apos; height=&apos;87&apos; background=&apos;&apos;&gt;&amp;nbsp;&lt;/td&gt;
+					&lt;td width=&apos;60%&apos; height=&apos;87&apos; valign=&apos;top&apos; background=&apos;&apos;&gt;&lt;div align=&apos;left&apos;&gt;&lt;div align=&apos;left&apos;&gt;&lt;font size=&apos;1&apos;&gt;&lt;br&gt;
+						&lt;font size=&apos;2&apos; face=&apos;Arial, Helvetica, sans-serif&apos;&gt;&lt;strong&gt; &lt;span class=&apos;datestyle&apos;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+						&lt;font color=&apos;#000000&apos;&gt;
+
+
+
+						&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt; 
+				&lt;tr bgcolor=&apos;#6699CC&apos;&gt; 
+					&lt;td height=&apos;20&apos; colspan=&apos;2&apos; valign=&apos;middle&apos;&gt;&lt;marquee&gt;&lt;span class=&apos;welcome&apos;&gt;&lt;font color=&apos;#FFFF00&apos;&gt;&lt;strong&gt;Welcome To LoanIQ&lt;/strong&gt;&lt;/font&gt;&lt;/span&gt;&lt;/marquee&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+			&lt;table width=&apos;700&apos; border=&apos;0&apos; cellspacing=&apos;0&apos; cellpadding=&apos;0&apos; align=&apos;center&apos;&gt;	
+				&lt;tr&gt;
+					&lt;td align=&apos;center&apos;&gt;								
+						&lt;table&gt;
+							&lt;br&gt;&lt;br&gt;&lt;br&gt;
+							&lt;tr&gt;&lt;td&gt;&lt;b&gt;Account No:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;input name=&apos;accno&apos; type=&quot;text&quot; onKeyPress=&quot;return valid()&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;
+							
+							&lt;tr&gt;&lt;td&gt;&lt;b&gt;Password&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;input name=&apos;password&apos; type=&quot;password&quot; onKeyPress=&quot;return valid()&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;
+							&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;input type=&quot;image&quot; src=&quot;images/login.JPG&quot; height=&quot;25&quot; width=&quot;65&quot; align=&quot;left&quot;/&gt;&lt;/img&gt;&lt;a href=&quot;register.jsp&quot;&gt;&lt;img src=&quot;images/signup.JPG&quot; height=&quot;25&quot; width=&quot;65&quot; align=&quot;right&quot; border=&apos;0&apos;&gt;&lt;/a&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;
+							&lt;tr&gt;&lt;td width=&quot;50%&quot;&gt;&lt;a href=&quot;forgotpassword.jsp&quot;&gt;Forgot Password?&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+						&lt;/table&gt;							
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://192.168.0.128:7001/LoanIQ/login.jsp</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="api.msn.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1408" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT api.msn.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="assets.msn.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1408" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT assets.msn.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="beacons.gvt2.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1290" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT beacons.gvt2.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="38" it="0" lt="38" ct="3" ts="1749624217293" s="true" lb="perdonal bank-3" rc="200" rm="OK" tn="" dt="text" de="ISO-8859-1" by="3080" sc="1" ec="0" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: close
+Date: Wed, 11 Jun 2025 06:43:26 GMT
+Pragma: no-cache
+Content-Length: 2855
+Content-Type: text/html; charset=ISO-8859-1
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Referer: http://192.168.0.128:7001/LoanIQ/login.jsp
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Origin: http://192.168.0.128:7001
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: 192.168.0.128:7001
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: max-age=0
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Content-Length: 40
+</requestHeader>
+  <responseData class="java.lang.String">
+
+
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;LoanIQ: Customerhome&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body bgcolor=&quot;#FFCC99&quot;&gt;
+		&lt;table width=&quot;80%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+			&lt;tr&gt;
+				&lt;td height=&quot;89&quot;&gt;&lt;/td&gt;
+				&lt;td width=&quot;35%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+				&lt;td width=&quot;55%&quot; height=&quot;89&quot; valign=&quot;top&quot;&gt;
+				&lt;font size=&quot;2&quot; face=&quot;Arial, Helvetica, sans-serif&quot;&gt;
+								&lt;strong&gt;
+									&lt;span class=&quot;datestyle&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+										&lt;font color=&quot;#000000&quot;&gt;
+											&lt;!-- #BeginDate format:acAm1a --&gt;
+												   
+
+											
+
+												&lt;!-- #EndDate --&gt;
+												&amp;nbsp;
+										&lt;/font&gt;
+									&lt;/span&gt;
+								&lt;/strong&gt;
+							&lt;/font&gt;
+						&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; bgcolor=&quot;#FFCC99&quot;&gt; 
+				&lt;td height=&quot;18&quot; colspan=&quot;3&quot;&gt; 
+					&lt;div align=&quot;right&quot; class=&quot;welcome&quot;&gt;
+						&lt;font color=&quot;#000000&quot;&gt;
+							&lt;strong&gt;
+
+								Welcome Mr.		IQ10115  &amp;nbsp;&amp;nbsp;
+								Last Login:   
+
+								11/6/2025 &amp;nbsp;&amp;nbsp;
+								0-13-26PM
+							
+							&lt;/strong&gt;
+						&lt;/font&gt;
+					&lt;/div&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr width=&quot;100%&quot;&gt; 
+				&lt;td height=&quot;42&quot; colspan=&quot;3&quot;&gt;
+					&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+						&lt;tr&gt; 
+						&lt;td width=&quot;49%&quot; height=&quot;35&quot; valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; border=1&gt; 
+						&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;accounts.jsp&quot;&gt;&lt;img src=&quot;images/Accounts.JPG&quot; name=&quot;image1&quot; width=&quot;90&quot; height=&quot;30&quot; border=&quot;0&quot; id=&quot;image1&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+						&lt;td width=&quot;12%&quot;&gt;&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;loans.jsp&quot;&gt;&lt;img src=&quot;images/Loans.JPG&quot; name=&quot;image2&quot; width=&quot;70&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+						&lt;td width=&quot;14%&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;BillPay.jsp&quot;&gt;&lt;img src=&quot;images/Billpay.JPG&quot; name=&quot;image3&quot; width=&quot;75&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+						&lt;td width=&quot;12%&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;CreditCards.jsp&quot;&gt;&lt;img src=&quot;images/cards.JPG&quot; name=&quot;image4&quot; width=&quot;100&quot; height=&quot;30&quot; border=&quot;0&quot; id=&quot;image4&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+						&lt;td width=&quot;14%&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;Demat.jsp&quot;&gt;&lt;img src=&quot;images/Demat.JPG&quot; name=&quot;image5&quot; width=&quot;70&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+						&lt;td width=&quot;12%&quot;&gt;&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;Logout.jsp&quot;&gt;&lt;img src=&quot;images/logout.JPG&quot; width=&quot;70&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						
+					&lt;/table&gt;
+					&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+						&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+					&lt;/table&gt;
+					&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;/table&gt;
+					&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+						&lt;tr valign=&quot;top&quot; align=&quot;center&quot; width=&quot;100%&quot;&gt;
+							
+							&lt;td width=&quot;105%&quot; bgcolor=&quot;#6699CC&quot;&gt;									
+										
+											&lt;font color=&quot;#FFFFFF&quot;&gt;Copyright 
+									2007 www.arabianbank.com All Rights Reserved&lt;/font&gt;									
+								
+							&lt;/td&gt;
+							
+						&lt;/tr&gt;
+					&lt;/table&gt;				
+	&lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">accno=IQ10115&amp;password=welcome&amp;x=28&amp;y=16</queryString>
+  <java.net.URL>http://192.168.0.128:7001/LoanIQ/Login?JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228!1749624011624</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="api.msn.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1408" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT api.msn.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="assets.msn.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1408" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT assets.msn.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="clients4.google.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1290" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT clients4.google.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="12" it="0" lt="12" ct="5" ts="1749624224172" s="true" lb="login-4" rc="200" rm="OK" tn="" dt="text" de="ISO-8859-1" by="3711" sc="1" ec="0" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Connection: close
+Date: Wed, 11 Jun 2025 06:43:33 GMT
+Content-Length: 3569
+Content-Type: text/html; charset=ISO-8859-1
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Referer: http://192.168.0.128:7001/LoanIQ/Login?JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228!1749624011624
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Host: 192.168.0.128:7001
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+</requestHeader>
+  <responseData class="java.lang.String">
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;LoanIQ: Accounts&lt;/title&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#FFCC99&quot;&gt;
+&lt;table bgcolor=&quot;#FFCC99&quot; width=&quot;80%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;bottom&quot;&gt; 
+    &lt;td height=&quot;89&quot; bgcolor=&quot;#FFCC99&quot;&gt;&lt;div align=&quot;right&quot;&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td width=&quot;35%&quot; background=&quot;&quot; bgcolor=&quot;#FFCC99&quot;&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;td width=&quot;55%&quot; height=&quot;89&quot; valign=&quot;top&quot; background=&quot;&quot; bgcolor=&quot;#FFCC99&quot;&gt;&lt;div align=&quot;left&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;br&gt;
+        &lt;font size=&quot;2&quot; face=&quot;Arial, Helvetica, sans-serif&quot;&gt;&lt;strong&gt; &lt;span class=&quot;datestyle&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+        &lt;font color=&quot;#000000&quot;&gt;
+        &lt;!-- #BeginDate format:acAm1a --&gt;
+       
+
+
+
+        &lt;!-- #EndDate --&gt;
+        &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; bgcolor=&quot;#FFCC99&quot;&gt; 
+    &lt;td height=&quot;18&quot; colspan=&quot;3&quot;&gt; 
+      &lt;div align=&quot;right&quot; class=&quot;welcome&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;strong&gt;
+
+Welcome Mr.      IQ10115  &amp;nbsp;&amp;nbsp;
+Last Login:   
+
+11/6/2025 &amp;nbsp;&amp;nbsp;
+0-13-33PM
+
+&lt;/font&gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td height=&quot;42&quot; colspan=&quot;3&quot;&gt; &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+      &lt;tr&gt; 
+          &lt;td width=&quot;49%&quot; height=&quot;35&quot; valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; border=1&gt; 
+            &lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;accounts.jsp&quot;&gt;&lt;img src=&quot;images/Accounts.JPG&quot; name=&quot;image1&quot; width=&quot;90&quot; height=&quot;30&quot; border=&quot;0&quot; id=&quot;image1&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+          &lt;td width=&quot;12%&quot;&gt;&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;loans.jsp&quot;&gt;&lt;img src=&quot;images/Loans.JPG&quot; name=&quot;image2&quot; width=&quot;70&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+          &lt;td width=&quot;14%&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;BillPay.jsp&quot;&gt;&lt;img src=&quot;images/Billpay.JPG&quot; name=&quot;image3&quot; width=&quot;75&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+          &lt;td width=&quot;12%&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;CreditCards.jsp&quot;&gt;&lt;img src=&quot;images/cards.JPG&quot; name=&quot;image4&quot; width=&quot;100&quot; height=&quot;30&quot; border=&quot;0&quot; id=&quot;image4&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+          &lt;td width=&quot;14%&quot;&gt;&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;Demat.jsp&quot;&gt;&lt;img src=&quot;images/Demat.JPG&quot; name=&quot;image5&quot; width=&quot;70&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+          &lt;td width=&quot;12%&quot;&gt;&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;Logout.jsp&quot;&gt;&lt;img src=&quot;images/logout.JPG&quot; width=&quot;70&quot; height=&quot;30&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign=&quot;top&quot;&gt; 
+    &lt;td height=&quot;20&quot; colspan=&quot;3&quot;&gt; &lt;blockquote&gt; 
+        &lt;blockquote&gt; 
+          &lt;p&gt;&lt;span class=&quot;subhead&quot;&gt;&lt;font color=&quot;#0000FF&quot;&gt;&lt;a href=&quot;customerhome.jsp&quot;&gt;Bank Accounts&amp;gt;&lt;/a&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign=&quot;top&quot; bgcolor=&quot;#FFCC99&quot;&gt; 
+    &lt;td height=&quot;230&quot; colspan=&quot;3&quot;&gt; 
+      &lt;blockquote&gt;
+        &lt;blockquote&gt; 
+       
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;AccountSummary.jsp&quot;&gt;Account&amp;nbsp;Summary&lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;FundTransfer.jsp&quot;&gt;Fund&amp;nbsp;Transfer&lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;ServiceRequests.jsp&quot;&gt;Service&amp;nbsp;Requests&lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;stmt.jsp&quot;&gt;Statements&lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;MobileRecharge.jsp&quot;&gt;Mobile&amp;nbsp;Recharge&lt;/a&gt;&lt;br&gt;
+
+
+
+&lt;/tr&gt;
+&lt;tr valign=&quot;top&quot; bgcolor=&quot;#6699CC&quot;&gt; 
+    &lt;td height=&quot;16&quot; colspan=&quot;3&quot;&gt; 
+      &lt;div align=&quot;center&quot; class=&quot;conditions&quot;&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Copyright 
+        2007 www.arabianbank.com All Rights Reserved&lt;/font&gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://192.168.0.128:7001/LoanIQ/accounts.jsp</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="www.googleapis.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1290" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT www.googleapis.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="9" it="0" lt="9" ct="5" ts="1749624230800" s="true" lb="accounts-5" rc="200" rm="OK" tn="" dt="text" de="ISO-8859-1" by="2169" sc="1" ec="0" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Connection: close
+Date: Wed, 11 Jun 2025 06:43:39 GMT
+Content-Length: 2027
+Content-Type: text/html; charset=ISO-8859-1
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Referer: http://192.168.0.128:7001/LoanIQ/accounts.jsp
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Host: 192.168.0.128:7001
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+</requestHeader>
+  <responseData class="java.lang.String">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;LoanIQ : Logout&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#FFCC99&quot;&gt;
+&lt;table bgcolor=&quot;#FFCC99&quot; width=&quot;99%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;bottom&quot;&gt; 
+    &lt;td height=&quot;89&quot; bgcolor=&quot;#FFCC99&quot;&gt;&lt;div align=&quot;right&quot;&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td width=&quot;35%&quot; background=&quot;&quot; bgcolor=&quot;#FFCC99&quot;&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;td width=&quot;55%&quot; height=&quot;89&quot; valign=&quot;top&quot; background=&quot;&quot; bgcolor=&quot;#FFCC99&quot;&gt;&lt;div align=&quot;left&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;br&gt;
+        &lt;font size=&quot;2&quot; face=&quot;Arial, Helvetica, sans-serif&quot;&gt;&lt;strong&gt; &lt;span class=&quot;datestyle&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+&lt;/span&gt;&lt;/strong&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign=&quot;top&quot; bordercolor=&quot;#6699CC&quot; bgcolor=&quot;#FFCC99&quot;&gt; 
+    &lt;td height=&quot;14&quot; colspan=&quot;3&quot;&gt; 
+      &lt;div align=&quot;right&quot; class=&quot;welcome&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;strong&gt;&lt;br&gt;
+        &lt;/strong&gt;&lt;/font&gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;tr&gt; 
+    &lt;td height=&quot;141&quot; colspan=&quot;3&quot;&gt; &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;div align=&quot;center&quot; class=&quot;hEADINGS&quot;&gt;
+            &lt;p&gt;&lt;br&gt;
+              &lt;br&gt;
+            &lt;/p&gt;
+            &lt;p&gt; &lt;br&gt;
+            &lt;/p&gt;
+            &lt;p&gt; You Are Successfully Logged Out .......! &lt;br&gt;
+
+             
+		
+              &lt;span class=&quot;conditions&quot;&gt; &lt;font color=&quot;#000099&quot;&gt; &lt;br&gt;
+              &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#000099&quot;&gt;&lt;a href=&quot;./login.jsp&quot; class=&quot;conditions&quot;&gt;&lt;br&gt;
+              Click Here To Go To Home Page&lt;/a&gt;&lt;br&gt;
+              &lt;br&gt;
+              &lt;/font&gt;&lt;/p&gt;
+
+            &lt;p&gt;&lt;br&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+            &lt;/p&gt;
+            &lt;p&gt;&lt;br&gt;
+              &lt;br&gt;
+              &lt;br&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign=&quot;top&quot; bgcolor=&quot;#6699CC&quot;&gt; 
+    &lt;td colspan=&quot;3&quot;&gt; &lt;div align=&quot;left&quot;&gt;&lt;/div&gt;
+      &lt;DIV ALIGN=&quot;CENTER&quot;&gt;&lt;FONT color=&quot;#FFFFFF&quot; SIZE=&quot;2&quot; FACE=&quot;Tahoma&quot;&gt;Copyright 
+        2007 www.arabianbank.com All Rights Reserved&lt;/FONT&gt;&lt;/DIV&gt;
+                  &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">JSESSIONID=hfNdt7tol8YhFKtVG-tnPARI5rPYFrYKpa-ZYnAAi2s6XKpULr2l!463662228</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://192.168.0.128:7001/LoanIQ/Logout.jsp</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="www.googleapis.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1290" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT www.googleapis.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="beacons2.gvt2.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1290" sc="1" ec="1" ng="0" na="0" hn="SHAIK-SAMEER">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT beacons2.gvt2.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+</testResults>

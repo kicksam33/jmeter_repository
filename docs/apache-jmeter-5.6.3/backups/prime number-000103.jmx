@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">for(int i=1;i&lt;=100;i++)
+{
+	log.info(&quot;number : &quot; +i);
+	int count=0;
+	for(j=2;j&lt;i;j++)
+	{
+		if(i%j==0)
+		{
+			count++;
+		}
+	}
+	if(count==0)
+	{
+		log.info(&quot;number is prime : &quot; +i);
+	}
+	else
+	{
+		log.info(&quot;number is not prime : &quot; +i);
+	}
+}
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="prime number" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">for(int i=100;i&lt;=200;i++)
+{
+	log.info(&quot;numbersin main loop :&quot; +i);
+int count=0;
+for(int j=2;j&lt;i;j++)
+{
+	log.info(&quot;count :&quot; +count);
+	log.info(&quot; i number in loop: &quot; +i);
+	log.info(&quot;j number in loop: &quot; +j);
+	if(i%j==0)
+	{
+		count++;
+	}
+}
+if(count==0)
+{
+	log.info(&quot;it is a prime number : &quot; +i);
+}
+else
+{
+	log.info(&quot; its a prime number : &quot; +i);
+}
+}
+
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="prime no 2" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">for(int i=1;i&lt;=200;i++)
+{
+	log.info(&quot;number: &quot; +i);
+	int count=0;
+	for(int j=2;j&lt;i;j++)
+	{
+		if(i%j==0)
+		{
+			count++;
+		}
+	}
+	if(count==0)
+	{
+		log.info(&quot;its a PRIME number&quot;);
+	}
+	else
+	{
+		log.info(&quot;it is NOT a PRIME number&quot;);
+	}
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="fibonecci series" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">int a=0,b=1,c;
+for(int i=1;i&lt;=20;i++)
+
+{
+	c=a+b;
+	
+	log.info(&quot;Series :&quot; +c);
+	a=b;
+	b=c;
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="palindrome" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">	int num=35544553;
+int temp,sum=0,a;
+temp=num;
+while(num&gt;0)
+{
+	a=num%10;
+	sum=(sum*10)+a;
+	num=num/10;
+}
+if(temp==sum)
+{
+	log.info(&quot;number is a palindrome&quot;);
+}
+else
+{
+	log.info(&quot;number is not a palindrome&quot;);
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">int i,j;
+int count=0;
+for(i=2;i&lt;=125;i++)
+{
+	log.info(&quot;number :&quot; +i);
+	for(j=2;j&lt;i;j++)
+	{
+		if(i%j==0)
+{
+	count++;
+}
+	}
+	if(count==0)
+	{
+		log.info(&quot;its PRIME NUMBER :&quot; +i)
+	}else{
+		log.info(&quot;IT IS NOT A PRIME :&quot; +i)
+	}
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">
+        int rows = 5 // Number of rows for the pyramid
+
+        for (int i = 1; i &lt;= rows; i++) {
+            // Print spaces
+            for (int j = i; j &lt; rows; j++) {
+                println (&quot; &quot;)
+            }
+            // Print stars
+            for (int k = 1; k &lt;= (2 * i - 1); k++) {
+                println (&quot;*&quot;)
+            }
+            // Move to the next line
+            println()
+        }
+    }
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">int num=12321;
+int temp,sum=0,a;
+temp=num;
+while(num&gt;0)
+{
+	a=num%10;
+	sum=(sum*10)+a;
+	num=num/10;
+}
+if(temp==sum)
+{
+	log.info(&quot;palindrome value&quot;);
+}
+else
+{
+	log.info(&quot;not a palindrome value&quot;);
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="pyramid">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">int n=7
+
+for(int i=1;i&lt;=n;i++)
+{
+String spaces = &apos; &apos; *(n -i)
+String stars = &apos;*&apos;*(2*i-1)
+log.info(spaces+stars)
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="String length" enabled="false">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">String str=&quot;welcome to pt open source tool jmeter&quot;;
+int count;
+count=str.length();
+log.info(&quot;stringth length is :&quot; +count);</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="String concat" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">String str1=&quot;welcome to jmeter open source &quot;;
+String str2=&quot;performance testing tool&quot;;
+String str3;
+str3=str1.concat(str2);
+log.info(&quot;new string :&quot; +str3);</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="String_count">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">String str=&quot;welcome to pt open source tool jmeter&quot;;
+int count;
+log.info(&quot;string is:&quot; +str);
+
+count=str.length();
+log.info(&quot;stringth length is :&quot; +count);
+for(int i=0;i&lt;count;i++)
+{
+	log.info(&quot;character is :&quot; +str[i]);
+}
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
